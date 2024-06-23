@@ -1,0 +1,6 @@
+Manage > Extensions (Ctrl+Shift+X)
+
+Extensions:
+1. HTML CSS Support
+2. Auto Close/Rename/Complete Tag
+3. Live Server

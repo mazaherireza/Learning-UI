@@ -1,0 +1,14 @@
+HTML Anatomy
+------------
+HTML is composed of elements. 
+These elements, structure the webpage and define its content. 
+
+... the paragraph element is made up of one opening tag (<p>), 
+the content ("Hello World!" text), and a closing tag (</p>). 
+
+A tag and the content between it, is called an HTML element. 
+
+HTML tag: The element name, surrounded by an opening (<) and closing (>) angle bracket.
+Opening tag
+Content 
+Closing tag
