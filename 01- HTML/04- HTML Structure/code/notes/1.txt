@@ -1,0 +1,17 @@
+HTML Structure
+--------------
+HTML is organized as a collection of family tree relationships.
+When an element is contained inside another element, it is considered the child of that element.
+The child element is said to be nested inside of the parent element.
+
+<body>
+  <p>This paragraph is a child of the body</p>
+</body>
+
+... 2 spaces of indentation for better readability. 
+
+The relationship between elements and 
+their ancestor(forefather) and descendent(generation) elements is known as hierarchy.
+
+Understanding HTML hierarchy is important 
+because child elements can inherit behaviour and styling from their parent element.

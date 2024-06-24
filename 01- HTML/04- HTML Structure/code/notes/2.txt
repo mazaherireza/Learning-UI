@@ -1,0 +1,12 @@
+Headings
+--------
+Headings in HTML are similar to headings in other types of media. 
+For example, In newspapers, large headings are typically used to capture a reader's attention. 
+Other times, headings are used to describe content, like the title of a movie or an educational article.
+
+HTML follows a similar pattern. 
+In HTML, there are 6 different headings, or heading elements. 
+Headings can be used for a variety of purposes, like titling sections, articles, or other forms of content.
+
+<h1>, used for main headings. 
+All other smaller headings are used for subheadings.
