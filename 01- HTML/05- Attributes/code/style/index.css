@@ -1,0 +1,16 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+  background: #d1d8e0 radial-gradient(#d1d8e0, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playground {
+  padding: 1rem;
+}

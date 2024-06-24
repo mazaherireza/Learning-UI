@@ -1,0 +1,11 @@
+Attributes
+----------
+If we want to expand an element's tag, we can do so using an attribute.
+Attributes are content added to the opening tag of an element and can be used in several different ways, 
+from providing information to changing styling.
+
+Attributes are made up of the following 2 parts: 
+1- The name of the attribute 
+2- The value of the attribute
+
+One commonly used attribute is the id. 
