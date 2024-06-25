@@ -1,0 +1,7 @@
+Linking At Will
+---------------
+You've probably visited websites where not all links were made up of text. 
+Maybe the links you clicked on, were images or some other form of content.
+
+Thankfully, HTML allows you to turn nearly any element into a link by wrapping that element with an anchor element.
+With this technique, it's possible to turn images into links by simply wrapping the <img> element with an <a> element.

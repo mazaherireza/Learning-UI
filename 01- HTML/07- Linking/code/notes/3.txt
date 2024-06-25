@@ -1,0 +1,27 @@
+Linking to Relative Page
+------------------------
+...
+Many sites also link to internal web pages like Home, About, and Contact.
+
+When making multi-page static websites, web developers often store HTML files in the root directory, 
+or a main folder where all the files for the project are stored.
+
+project-folder/
+|____ about.html
+|____ contact.html
+|____ index.html
+
+If the browser is currently displaying index.html, it also knows that about.html and contact.html are in the same folder.
+
+Because the files are stored in the same folder, we can link web pages together using a relative path.
+
+<a href="./contact.html">Contact</a>
+
+..., the <a> tag is used with a relative path to link from the current HTML file 
+to the contact.html file in the same folder. 
+
+A relative path is a filename that shows the path to a local file (a file on the same website, such as ./index.html) 
+versus an absolute path (a full URL, like https://www.codecademy.com/learn/learn-html which is stored in a different folder)
+
+The ./ in ./index.html tells the browser to look for the file in the current folder.
+

@@ -1,0 +1,19 @@
+Linking to Same Page
+--------------------
+When users visit our site, 
+we want them to be able to click a link and have the page automatically scroll to a specific section. 
+
+In order to link to a target on the same page, we must give the target an id, like this:
+
+<p id="top">This is the top of the page!</p>
+<h1 id="bottom">This is the bottom!</h1>
+
+The target link is a string containing the # character and the target element's id. 
+
+<ol>
+  <li><a href="#top">Top</a></li>
+  <li><a href="#bottom">Bottom</a></li>
+</ol>
+
+In the example above, the links to <p id="top"> and <h1 id="bottom"> are embedded in an ordered list. 
+These links appear in the browser as a numbered list of links.

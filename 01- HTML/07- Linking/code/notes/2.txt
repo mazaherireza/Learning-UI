@@ -1,0 +1,10 @@
+Opening Links in a New WINDOW
+-----------------------------
+The target attribute specifies how a link should open.
+
+For a link to open in a new WINDOW, the target attribute requires a value of _blank.
+
+The target attribute can be added directly to the opening tag of the anchor element, 
+just like the href attribute.
+
+The target="_blank" attribute, when used in modern browsers, will open new websites in a new TAB.
