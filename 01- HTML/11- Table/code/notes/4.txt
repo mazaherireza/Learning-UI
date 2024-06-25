@@ -1,0 +1,15 @@
+Table Data
+----------
+Rows aren't sufficient to add data to a table. 
+Each cell element must also be defined. 
+
+In HTML, you can add data using the table data element: <td>.
+
+<table>
+  <tr>
+    <td>Reza</td>
+    <td>Mazaheri</td>
+  </tr>
+</table>
+
+If the table were displayed in the browser, it would show a table with one row and two columns.

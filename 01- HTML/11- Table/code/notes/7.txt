@@ -1,0 +1,18 @@
+Table Body
+----------
+Over time, a table can grow to contain a lot of data and become very long. 
+When this happens, the table can be sectioned off so that it is easier to manage.
+
+Long tables can be sectioned off using the table body element: <tbody>. 
+The <tbody> element should contain all of the table's data, excluding the table headings.
+
+Table Head
+----------
+When a table's body is sectioned off, however, 
+it also makes sense to section off the table's headings using the <thead> element.
+
+Table Footer
+------------
+The bottom part of a long table can also be sectioned off using the <tfoot> element.
+
+Footers are often used to contain sums, differences, and other data results.

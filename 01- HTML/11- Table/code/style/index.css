@@ -1,0 +1,51 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+  background: #d1d8e0 radial-gradient(#d1d8e0, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playground {
+  padding: 1rem;
+}
+
+#playground #playground-title {
+  margin-bottom: 1rem;
+}
+
+table {
+  border: 1px solid black;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border-collapse: collapse;
+}
+
+table tr th,
+table tr td {
+  border: 1px solid black;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+table tr th,
+table tr td {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+table tr td:first-child {
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+}
+
+table tr td:last-child {
+  text-align: justify;
+}

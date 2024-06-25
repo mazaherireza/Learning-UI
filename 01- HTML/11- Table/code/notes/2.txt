@@ -1,0 +1,7 @@
+Create a Table
+---------------
+Before displaying data, you must first create the table that will contain the data by using the <table> element.
+
+<table></table>
+
+The <table> element will contain all of the tabular data you plan on dispalying.

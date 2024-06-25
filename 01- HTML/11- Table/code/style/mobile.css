@@ -1,0 +1,15 @@
+h1#hero-title {
+  font-size: larger;
+}
+
+#playground-title {
+  font-size: large;
+}
+
+table {
+  width: 100%;
+}
+
+table caption {
+  font-size: small;
+}

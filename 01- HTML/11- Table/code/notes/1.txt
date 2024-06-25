@@ -1,0 +1,6 @@
+Why Tables?
+-----------
+There are many websites on the Internet that display information like stock prices, 
+sports scores, invoice data, and more.
+
+This data is naturally tabular in nature, meaning that a table is often the best way of presenting the data.

@@ -1,0 +1,8 @@
+Table Rows
+----------
+The first step in entering data into the table is to add rows using the table row element: <tr>.
+
+<table>
+  <tr></tr>
+  <tr></tr>
+</table>

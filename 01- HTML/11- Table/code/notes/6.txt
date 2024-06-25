@@ -1,0 +1,9 @@
+Spanning Columns/Rows
+---------------------
+What if the table contains data that spans multiple columns?
+
+Data can span columns using the colspan attribute. 
+The attributes accepts an integer (greater than or equal to 1) to denote the number of columns it spans across.
+
+Data can also span multiple rows using the rowspan attribute.
+...
