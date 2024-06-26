@@ -1,0 +1,18 @@
+Password Input
+--------------
+....
+Even though the password field obscures the text of the password, 
+when the form is submitted, the value of the text is sent. 
+
+In other words, if "Paris" is typed into the password field, 
+"password=Paris" is sent along with the other information on the form. 
+
+[Incomplete]
+Number Input
+Range Input
+Checkbox Input
+Radio Button Input
+Dropdown List
+Datalist Input
+Textarea element
+Submit Form

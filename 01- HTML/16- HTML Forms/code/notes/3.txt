@@ -1,0 +1,14 @@
+Text Input
+----------
+The <input> element has a type attribute which determines 
+how it renders on the web page and what kind of data it can accept. 
+When we create an <input> element with type="text", it renders a text field that users can type into.
+
+It's also important that we include a name attribute for the <input>.
+Without the name attribute, information in the <input> won't be sent when the <form> is submitted. 
+
+<form action="/collection.html" method="POST">
+  <input type="text" name="first-name" value="Reza" />
+</form>
+
+... first-name="Reza" is sent to collection.html ...

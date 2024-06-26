@@ -1,0 +1,18 @@
+How a Form Works
+----------------
+We can think of the internet as a network of computers which send and receive information. 
+
+Computers need an HTTP request to know how to communicate.
+The HTTP request instructs the receiving computer how to handle the incoming information.
+
+The <form> element is a great tool for collecting information, 
+but then we need to send that information somewhere else for processing.
+
+We need to supply the <form> element with both the location of where the <form>'s information goes and 
+what HTTP request to make.
+
+<form action="/example.html" method="POST"></form>
+
+... we've created the skeleton for a <form> that will send information to example.html as a POST request.
+The action attribute determines where the information is sent 
+and the method attribute is assigned a HTTP verb that is included in the HTTP request.
