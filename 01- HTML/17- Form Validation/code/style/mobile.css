@@ -1,0 +1,19 @@
+h1#hero-title {
+  font-size: larger;
+}
+
+#playground-title {
+  font-size: large;
+}
+
+.form-wrapper {
+  width: 80%;
+}
+
+.form-wrapper {
+  font-size: small;
+}
+
+input {
+  padding: 0.25rem 0.5rem;
+}

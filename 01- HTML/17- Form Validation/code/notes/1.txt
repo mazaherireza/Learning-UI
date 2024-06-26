@@ -1,0 +1,22 @@
+Introduction to HTML Form Validation
+------------------------------------
+Validation is the concept of checking user provided data against the required data.
+
+..., we use client-side validation if we want to check the data on the browser (the client). 
+This validation occurs before data is sent to the server. 
+Different browsers implement client-side validation differently, but it leads to the same outcome.
+
+... the benefits of using HTML5's built-in client-side validation.
+It saves us time from having to send information to the server 
+and wait for the server to send back confirmation or rejection of the data. 
+
+This can also help us protect our server from malicious code or data from a malicious user.
+
+It also allows us to quickly give feedback to users for specific fields 
+rather than having them fill in a form again if the data they input into the form was rejected. 
+
+Requiring an Input
+Set a Minumum and Maximum
+Checking Text Length
+Matching a Pattern 
+[Incomplete]
