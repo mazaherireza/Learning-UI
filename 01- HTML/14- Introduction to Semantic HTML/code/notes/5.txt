@@ -1,0 +1,18 @@
+The Aside Element
+-----------------
+The <aside> element is used to mark additional information that can enhance another element 
+but isn't required in order to understand the main content. 
+
+This element can be used alongside other elements such as <article> or <section>. 
+
+Some common uses of the <aside> element are for:
+Bibliographies
+Endnotes
+Comments
+Pull quotes
+Editorial sidebars
+Additional information
+
+..., the information within the <article> is the important content. 
+Meanwhile the information within the <aside> enhances the information in <article> 
+but is not required in order to understand it.

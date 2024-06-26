@@ -1,0 +1,29 @@
+Article and Section
+-------------------
+<section> defines elements in a document, such as chapters, headings, 
+or any other area of the document with the same theme.
+For example, content with the same theme such as articles about cricket can go under a single <section>. 
+
+A website's home page could be split into sections for the introduction,
+news items, and contact information.
+
+Here is an example of how to use <section>:
+
+<section>
+  <h2>How to Use Promise</h2> 
+</section>
+
+... we created a <section> element to encapsulate the code.
+
+The <article> element holds content that makes sense on its own. 
+<article> can hold content such as articles, blogs, comments, magazines, etc. 
+
+<section>
+  <h2>How to Use Promise</h2>
+  <article>
+    <p>....</p>
+    <p>Promise.then() takes 2 arguments, a callback for success and another for failure.</p>
+  </article>
+</section>
+
+... a <section> element could also be placed in an <article> element depending on the context.
