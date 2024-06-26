@@ -1,0 +1,13 @@
+HTML Entities
+-------------
+Reserved characters in HTML must be replaced with entities:
+< (less than) = &lt;
+
+HTML Character Entities
+-----------------------
+Some characters are reserved in HTMl.
+... the browser might mix them with tags.
+
+Entity names or entity numbers can be used to display reserved HTML characters.
+
+&copy; &#169;
