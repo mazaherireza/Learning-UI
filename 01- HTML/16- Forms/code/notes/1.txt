@@ -1,2 +1,3 @@
+Introduction to HTML Forms
+--------------------------
 Just like a physical form, an HTML <form> element is responsible for collecting information to send somewhere else.
-Every time we browse the internet we come into contact with many forms and we might not even realize it.
