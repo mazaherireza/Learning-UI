@@ -14,8 +14,8 @@ Just like table data, a table heading must be placed within a table row.
   </tr>
   <tr>
     <th scope="row">Temperature</th>
-    <td>73</td>
-    <td>81</td>
+    <td>73°F/td>
+    <td>81°F</td>
   </tr>
 </table>
 
@@ -26,6 +26,6 @@ a blank heading, a Saturday heading, and a Sunday heading.
 
 In the second row, one table heading was added as a row title: Temperature.
 
-Note, also, the use of the scope attribute, which can take one of two values:
+... the use of the scope attribute, which can take 1 of 2 values:
 1- row: this value makes it clear that the heading is for a row.
-2- col: this value makes it clear that the heading is for a column.
+2- col: ...

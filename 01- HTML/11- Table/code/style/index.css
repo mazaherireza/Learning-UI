@@ -20,24 +20,17 @@ main {
 }
 
 table {
-  border: 1px solid black;
-  width: 80%;
+  width: 70%;
   margin-right: auto;
   margin-left: auto;
+  border: 1px solid black;
   border-collapse: collapse;
 }
 
 table tr th,
 table tr td {
   border: 1px solid black;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-table tr th,
-table tr td {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.25rem 1rem;
 }
 
 table tr td:first-child {
