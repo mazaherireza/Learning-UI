@@ -1,0 +1,28 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+  background: #d1d8e0 radial-gradient(#d1d8e0, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playground {
+  padding: 1rem;
+}
+
+#playground video {
+  width: 40%;
+  display: block;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
