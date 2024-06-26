@@ -14,28 +14,3 @@ main {
 #playground {
   padding: 1rem;
 }
-
-#playground #playground-title {
-  margin-bottom: 1rem;
-}
-
-label,
-input[type="text"] {
-  display: block;
-  font-size: small;
-  font-weight: bold;
-  width: 60%;
-}
-
-label {
-  margin-bottom: 0.25rem;
-}
-
-input {
-  padding: 0.05rem 0.25rem;
-  margin-bottom: 0.5rem;
-}
-
-input[type="submit"] {
-  padding: 0rem 0.25rem;
-}
