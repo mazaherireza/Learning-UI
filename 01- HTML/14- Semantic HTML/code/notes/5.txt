@@ -14,5 +14,6 @@ Editorial sidebars
 Additional information
 
 ..., the information within the <article> is the important content. 
+
 Meanwhile the information within the <aside> enhances the information in <article> 
 but is not required in order to understand it.

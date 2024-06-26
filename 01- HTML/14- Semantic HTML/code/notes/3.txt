@@ -1,15 +1,10 @@
 Main and Footer
 ---------------
-These elements along with <nav> and <header> help describe where an element is located 
-based on conventional web development standards.
-
 The element <main> is used to encapsulate the dominant content within a webpage. 
 This tag is separate from the <footer> and the <nav> of a web page 
 since these elements don't contain the principal content. 
 
-By using <main> as opposed to a <div> element, 
-screen readers and web browsers are better able to identify that whatever is inside of the tag is the bulk of the content.
-
+...
 So how does <main> look when incorporated into our code? 
 
 <main>
