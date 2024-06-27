@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "poppinsbold";
+  src: local("poppinsbold"),
+    url("../assets/fonts/Poppins/poppins-bold-webfont.woff2") format("woff2"),
+    url("../assets/fonts/Poppins/poppins-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppinslight";
+  src: local("poppinslight"),
+    url("../assets/fonts/Poppins/poppins-light-webfont.woff2") format("woff2"),
+    url("../assets/fonts/Poppins/poppins-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppinsmedium";
+  src: local("poppinsmedium"),
+    url("../assets/fonts/Poppins/poppins-medium-webfont.woff2") format("woff2"),
+    url("../assets//fonts/Poppins/poppins-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppinsregular";
+  src: local("poppinsregular"),
+    url("../assets/fonts/Poppins/poppins-regular-webfont.woff2") format("woff2"),
+    url("../assets/fonts/Poppins/poppins-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppinssemibold";
+  src: local("poppinssemibold"),
+    url("../assets/fonts/Poppins/poppins-semibold-webfont.woff2")
+      format("woff2"),
+    url("../assets/fonts/Poppins/poppins-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: poppinsregular, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
