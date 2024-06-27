@@ -1,0 +1,24 @@
+CSS Pseudo-classes <-------------- ***
+------------------
+pseudo- (pretended and not real)
+
+... is used to define a special state of an element. <-------------- ***
+For example, it can be used to:
+Style an element when a user mouses over it    
+
+The :root selector matches the document's root element.
+In HTML, the root element is ALWAYS the html element. <-------------- ***
+
+:root {
+  CSS declarations;
+}
+
+The :empty selector matches every element that has no children (including text nodes). <-------------- ***
+
+The :checked selector, matches every checked <input> element (only for radio buttons and checkboxes) and <option> element.
+
+input[type="checkbox"]:checked + .alert {
+  display: inline-block;
+}
+
+The :not(selector) selector, matches every element that is NOT the specified element/selector. <-------------- ***
