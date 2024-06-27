@@ -1,0 +1,12 @@
+h1#hero-title {
+  font-size: larger;
+}
+
+#playground-title {
+  font-size: large;
+}
+
+.container {
+  width: 65%;
+  height: 40%;
+}
