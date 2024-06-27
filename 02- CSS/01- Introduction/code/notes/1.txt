@@ -1,0 +1,29 @@
+CSS, or Cascading Style Sheets, is a language that web developers use to style the HTML content on a web page.
+
+Inline Styles
+The <style> Tag
+The .css file
+Linking the CSS File
+Tag Name
+Class Name
+Multiple Classes
+ID Name
+Classes and IDs
+Specificity
+Chaining Selectors
+Nested Elements
+Chaining and Specificity
+Important
+Multiple Selectors
+
+Cascading Style Sheets or CSS is a language web developers use to style the HTML content on a web page.
+
+Selectors
+Type 
+Universal
+Class
+Multiple Classes
+ID
+Attribute
+Pseudo-class
+... :focus, :visited, :disabled, and :active are all pseudo-classes.
