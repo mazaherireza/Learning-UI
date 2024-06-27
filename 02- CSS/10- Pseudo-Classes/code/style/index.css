@@ -35,6 +35,7 @@ label {
   align-items: center;
   justify-content: space-between;
   border: 1px solid transparent;
+  font-weight: bold;
   margin-bottom: 0.5rem;
   transition: all 1s;
   -webkit-transition: all 1s;
