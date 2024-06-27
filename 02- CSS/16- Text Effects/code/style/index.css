@@ -1,0 +1,35 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+  background: #db0030 linear-gradient(#fff, #db0030);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playground {
+  padding: 1rem;
+}
+
+.book-title {
+  margin-top: 1rem;
+  width: 10rem;
+  height: 2rem;
+  line-height: 2rem;
+  background-color: rgba(192, 192, 192, 0.25);
+  padding: 0 0.5rem;
+  font-size: small;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}

@@ -1,0 +1,27 @@
+CSS Text Effects
+----------------
+
+The CSS text-overflow property specifies how overflowed content that is not displayed, should be signaled to the user.
+It can be clipped, or it can be rendered as an ellipsis (...). <--------------- ***
+
+The CSS word-wrap property allows long words to be able to be broken and wrap onto the next line. 
+
+If a word is too long to fit within an area, it expands outside,
+The word-wrap property allows you to force the text to wrap, even if it means splitting it in the middle of a word.
+
+The CSS writing-mode property specifies whether lines of text are laid out horizontally or vertically.
+
+The white-space property specifies how white-space inside an element is handled. <---------------- *****
+
+Value, Description
+
+nowrap
+
+Sequences of whitespace will collapse into a SINGLE whitespace. 
+Text will NEVER wrap to the next line. The text continues on the same line until a <br> tag is encountered.
+
+
+
+
+
+
