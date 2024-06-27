@@ -1,0 +1,15 @@
+h1#hero-title {
+  font-size: larger;
+}
+
+#playground-title {
+  font-size: large;
+}
+
+.artist-container {
+  width: 60%;
+}
+
+.artist-name {
+  font-size: small;
+}

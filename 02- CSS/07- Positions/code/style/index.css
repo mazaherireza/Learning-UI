@@ -1,0 +1,61 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+  background: #db0030 linear-gradient(#fff, #db0030);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playground {
+  padding: 1rem;
+}
+
+.artist-container {
+  width: 40%;
+  margin: 1.5rem auto;
+  position: relative;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
+}
+
+.artist-container .artist-img {
+  width: 100%;
+}
+
+.artist-name {
+  display: none;
+  font-weight: bolder;
+  font-size: large;
+  padding: 0.25rem;
+  color: #db0030;
+  border: 1px solid #db0030;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.artist-container:hover {
+  opacity: 0.8;
+}
+
+.artist-container:hover .artist-name {
+  display: block;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+  -webkit-transform: translate(-50%, -85%);
+  -moz-transform: translate(-50%, -85%);
+  -ms-transform: translate(-50%, -85%);
+  -o-transform: translate(-50%, -85%);
+}
