@@ -1,0 +1,52 @@
+CSS Variables - The var() Function
+----------------------------------
+The var() function is used to insert the value of a CSS variable. <---------------- ***
+
+CSS variables have access to the DOM, <---------------------- ***
+which means that you can create variables with local or global scope, 
+change the variables with JS, and change the variables based on media queries.
+
+A good way to use CSS variables is when it comes to the colors of your design. <------------------ *
+
+The syntax of the var() function is as follows:
+var(--name, value) <---------------------- The fallback value     
+
+The variable name MUST begin with two dashes (--) and it is case sensitive!
+
+To create a variable with global scope, declare it inside the :root selector. 
+To create a variable with local scope, declare it inside the selector that is going to use it.
+
+Advantages of using var() are:
+makes the code easier to read (more understandable)
+makes it much easier to change the color values
+
+. Override Global Variable With Local Variable 
+----------------------------------------
+
+const root = $.querySelector(':root')
+const rootStyle = getComputedStyle(root)
+console.log(rootStyle.getPropertyValue('--primary'))
+
+. CSS Using Variables in Media Queries
+
+Now we want to change a variable value inside a media query. <--------------- **
+
+Media Queries are about defining different STYLE RULES for different devices <--------------- ***
+(screens, tablets, mobile phones, etc.).
+
+... we create a @media rule that says "When the browser's width is 450px or wider,
+change the --fontsize variable value of the .container class to 50px."
+
+@media screen and (min-width: 450px) {
+    .container {
+        --fontsize: 50px;
+    }
+    :root {
+        --primary: #hex-code;
+    }
+}
+
+Set the Spread Radius of the Shadow <--------------------------- ***
+
+The spread parameter defines the spread radius. 
+A positive value increases the size of the shadow, a negative value decreases the size of the shadow.
