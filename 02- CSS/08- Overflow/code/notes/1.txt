@@ -1,0 +1,12 @@
+CSS Layout - Overflow
+---------------------
+... controls what happens to content that is too big to fit into an area. <---------------- ***
+
+The overflow property specifies whether to clip the content or to add scrollbars when 
+the content of an element is too big to fit in the specified area.
+
+The overflow property has the following values:
+visible, hidden, scroll, auto <-------- it adds scrollbars only when necessary 
+
+Note: The overflow property ONLY works for block elements with a specified height. <----------------- ***
+
