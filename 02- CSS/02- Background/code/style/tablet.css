@@ -1,0 +1,23 @@
+body {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+main {
+  grid-row: 1 / span 1;
+}
+
+section {
+  grid-row: 2 / span 2;
+}
+
+.wrapper {
+  width: 50%;
+  height: 90%;
+  background-image: url("../assets/images/Isfahan_2.jpg");
+  background-size: 70% 70%;
+}
+
+.wrapper .title {
+  font-size: x-small;
+}

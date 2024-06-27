@@ -1,0 +1,45 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+  background: #db0030 linear-gradient(#fff, #db0030);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playground {
+  padding: 1rem;
+}
+
+#playground #playground-title {
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  width: 70%;
+  height: 90%;
+  overflow: hidden;
+  padding: 1rem;
+  margin: 0.5rem auto;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background: rgba(192, 192, 192, 0.25) url("../assets/images/Isfahan_1.png")
+    center / 80% 80% no-repeat;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+
+.wrapper .title {
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+  font-size: small;
+  border-bottom: 1px solid black;
+}

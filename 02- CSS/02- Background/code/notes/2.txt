@@ -1,0 +1,76 @@
+background-attachment
+
+scroll <----- The background image will scroll with the page. default
+
+background-blend-mode
+... defines the blending mode of each background layer (color and/or image)
+
+normal <----- This is default. Sets the blending mode to normal.
+
+background-clip 
+... defines how far the background (color or image) should extend within an element.
+
+border-box <------- Default value. The background extends behind the border
+
+background-color
+.... sets the background color of an element.
+
+The background of an element is the total size of the element, including padding and border 
+(but not the margin). <-------------- *
+
+transparent <---- Specifies that the background color should be transparent.
+
+background-image
+... sets one or more background images for an element.
+
+By default, a background-image is placed at the top-left corner of an element, 
+and repeated both vertically and horizontally.
+
+Tip: Always set a background-color to be used if the image is unavailable. <---------
+
+none <------------ No background image will be displayed. This is default.
+
+url("URL") <--------- The URL to the image
+
+background-image: url("photographer.jpg"); /* The image used */
+background-color: #cccccc; <------------------- /* Used if the image is unavailable */
+
+background-origin
+... specifies the origin position (the background positioning area) of a background image.
+
+Note: This property has no effect if background-attachment is "fixed". <-------------- ***
+
+padding-box <------- Default value. The background image starts from the upper left corner of the padding edge
+
+background-position
+... sets the starting position of a background image.
+
+left bottom
+center top
+center center
+
+If you only specify one keyword, the other value will be "center"
+
+background-position-x
+... sets the position of a background image on the x-axis.
+
+background-position-y
+... sets the position of a background image on the y-axis.
+
+background-repeat
+... sets if/how a background image will be repeated.
+
+Tip: The background image is placed according to the background-position property. <------------ **
+If no background-position is specified, the image is always placed at the element's top left corner.
+
+background-size
+... specifies the size of the background images.
+
+There are four different syntaxes you can use with this property: 
+
+the keyword syntax ("auto", "cover" and "contain"), 
+the one-value syntax (sets the width of the image (height becomes "auto")), 
+the two-value syntax (first value: width of the image, second value: height), 
+and the multiple background syntax (separated with comma).
+
+auto <------- Default value. The background image is displayed in its original size     
