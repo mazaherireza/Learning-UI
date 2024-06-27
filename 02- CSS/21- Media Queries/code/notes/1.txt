@@ -1,0 +1,54 @@
+CSS Media Queries <---------------- ***
+-----------------
+The @media rule, made it possible to define different STYLE RULES for different media types. <---------------- ***
+
+Media queries can be used to check many things, such as:
+width and height of the viewport
+orientation of the viewport (landscape or portrait)
+resolution
+
+Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, 
+and mobile phones (such as iPhone and Android phones).
+
+CSS Media Types
+---------------
+Value                             Description
+all                    Used for all media type devices
+print                  Used for print preview mode
+screen                 Used for computer screens, tablets, smart-phones etc.
+
+CSS Common Media Features
+-------------------------
+orientation	(Orientation of the viewport. Landscape or portrait)
+...
+width (Width of the viewport (including scrollbar))
+
+Media Query Syntax <------------------- ***
+------------------
+A media query consists of a media type and can contain one or more media features, 
+which resolve to either true or false.
+
+@media not|only mediatype and (media feature) and (media feature) {
+  CSS-Code;
+}
+
+The mediatype is optional (if omitted, it will be set to all). <--------------------- ***
+However, if you use not or only, you MUST also specify a mediatype.
+
+The result of the query is true if the specified media type matches the type of device 
+the document is being displayed on and ALL media features in the media query are true.
+
+When a media query is true, the corresponding style sheet or style rules are applied, 
+following the normal cascading rules. <--------------------- ***
+
+Meaning of the not, only, and and keywords:
+
+not: This keyword inverts the meaning of an entire media query. <------------------- ***
+
+only: This keyword prevents older browsers that do not support media queries from applying the specified styles. 
+It has no effect on modern browsers.
+
+and: This keyword combines a media type and one or more media features.
+
+You can also link to different stylesheets for different media and different widths of the browser window (viewport):
+<link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)" href="something.css">
