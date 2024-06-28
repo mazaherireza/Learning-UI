@@ -1,0 +1,17 @@
+Changing The Box Model
+----------------------
+
+Box Model: Content-Box
+----------------------
+In CSS, the box-sizing property controls the type of box model the browser should use when interpreting a web page. 
+The default value of this property is content-box.
+This is the same box model that is affected by border thickness and padding.
+
+Box Model: Border-Box
+---------------------
+In this box model, the height and width of the box will remain fixed. 
+
+The border thickness and padding will be included inside of the box, 
+which means the overall dimensions of the box do not change.
+
+(The content area is automatically sized based on the remaining width, after border and padding has been subtracted)

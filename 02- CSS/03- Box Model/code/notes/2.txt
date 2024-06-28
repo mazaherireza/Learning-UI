@@ -1,0 +1,99 @@
+All elements on a web page are interpreted by the browser as "living" inside of a box. 
+This is what is meant by the box model.
+For example, when you change the background color of an element, you change the background color of its entire box. 
+
+The Box Model
+-------------
+The box model comprises the set of properties which define parts of an element that take up space on a web page. 
+The model includes the content area's size and the element's padding, border, and margin. 
+
+The properties include: 
+1- Width and height — specifies the width and height of the content area.
+2- Padding — specifies the amount of space between the content area and the border.
+3- Border — specifies the thickness and style of the border surrounding the content area and padding.
+4- Margin — specifies the amount of space between the border and the outside edge of the element.
+
+Height and Width
+----------------
+An element's content has two dimensions: 
+a height and a width.
+
+By default, the dimensions of an HTML box are set to hold the raw contents of the box.
+
+Borders 
+-------
+A border is a line that surrounds an element, like a frame around a painting. 
+Borders can be set with a specific width, style, and color.
+
+The default border is medium none color, where color is the current color of the element.
+
+Border Radius
+-------------
+You can modify the corners of an element's border box with the border-radius property.
+You can create a border that is a perfect circle by setting the radius equal to the height of the box, or to 100%.
+
+Padding 1
+---------
+The space between the contents of a box and the borders of a box is known as padding.
+
+Padding 2
+---------
+... in a clockwise rotation. 
+
+Margin 
+------
+Margin refers to the space directly outside of the box. 
+
+Auto
+-----
+The margin property also lets you center content.
+However, you must follow a few syntax requirements. 
+
+The auto value instructs the browser to adjust the left and right margins 
+until the element is centered within its containing element.
+
+In order to center an element, a width must be set for that element.
+
+Margin Collapse
+---------------
+...
+Unlike horizontal margins, vertical margins do not add. 
+Instead, the larger of the two vertical margins sets the distance between adjacent elements.
+
+Minimum and Maximum Height and Width
+------------------------------------
+CSS offers two properties that can limit how narrow or how wide an element's box can be sized to.
+
+Overflow
+--------
+How can we ensure that we can view all of an element that is larger than its parent's containing area? 
+The overflow property controls what happens to content that spills, or overflows, outside its box.
+
+hidden, scroll, visible (this is the default value) 
+
+The overflow property is set on a parent element to instruct a web browser how to render child elements.
+
+Resetting Defaults
+------------------
+All major web browsers have a default stylesheet they use in the absence of an external stylesheet.
+These default stylesheets are known as user agent stylesheets.
+In this case, the term "user agent" is a technical term for the browser.
+
+User agent stylesheets often have default CSS rules that set default values for padding and margin.
+This affects how the browser displays HTML elements, 
+which can make it difficult for a developer to design or style a web page.
+
+Many developers choose to reset these default values so that they can truly work with a clean slate.
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+... resets the default margin and padding values of all HTML elements.
+It is often the first CSS rule in an external stylesheet.
+
+Visibility
+----------
+An element with display: none will be completely removed from the web page. 
+An element with visibility: hidden, however, will not be visible on the web page, but the space reserved for it will. 
