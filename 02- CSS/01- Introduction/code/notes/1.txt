@@ -1,29 +1,117 @@
+CSS Setup and Selectors
+-----------------------
 CSS, or Cascading Style Sheets, is a language that web developers use to style the HTML content on a web page.
 
 Inline Styles
+-------------
+Although CSS is a different language than HTML, 
+it's possible to write CSS code directly within HTML code using inline styles.
+
+To style an HTML element, you can add the style attribute directly to the opening tag.
+
 The <style> Tag
+---------------
+...
+Fortunately, HTML allows you to write CSS code in its own dedicated section with the <style> element.
+CSS can be written between opening and closing <style> tags.
+To use the <style> element, it must be placed inside of the <head> element.
+
 The .css file
+-------------
+Developers avoid mixing code by storing HTML and CSS code in seprate files.
+
+With a CSS file, you can write all the CSS code needed to style a page 
+without sacrificing the readability and maintainability of your HTML file.
+
 Linking the CSS File
+--------------------
+... use the <link> element to link HTML and CSS files together.
+The <link> element must be placed within the head of the HTML file.
+
+... requires the following 3 attributes:
+1. href
+2. type ... should be set to text/css.
+3. rel ... linking to a stylesheet, the value should be set to stylesheet.
+
 Tag Name
+--------
+CSS can select HTML elements by using an element's tag name.
+A tag name is the word (or character) between HTML angle brakets.
+
+p {
+
+}
+... all paragraph elements will be selected using a CSS selector.
+
 Class Name
+----------
+...
+To select an HTML element by its class using CSS, a period (.) must be prepended to the class's name.
+
 Multiple Classes
+----------------
+
 ID Name
+-------
+If an HTML element needs to be styled uniquely, we can add an ID to the element.
+
+#large-title {
+
+}
+
 Classes and IDs
+---------------
+CSS classes are meant to be reused over many elements. 
+By writing CSS classes, you can style elements in a variety of ways by mixing classes on HTML elements. 
+
+While classes are meant to be used many times, an ID is meant to style only one element.
+IDs override the styles of tags and classes.
+
 Specificity
+-----------
+Specificity is the order by which, the browser decides, which CSS styles will be displayed.
+
+A best practice in CSS is to style elements while using the lowest degree of specificity, 
+so that if an element needs a new style, it is easy to override.
+
+IDs are the most specific selector in CSS, followed by classes, and finally, tags.
+The only way to override an ID is to add another ID with additional styling.
+
+To make styles easy to edit, it's best to style with a tag selector, if possible.
+If not, add a class selector. If that is not specific enough, then consider using an ID selector.
+
 Chaining Selectors
+------------------
+...
+p.destination {
+  font-family: cursive;
+}
+
+The code above would select only the p elements that have a class of destination.
+
 Nested Elements
+---------------
+...
+Selecting elements in this way can make our selectors even more specific 
+by making sure they appear in the context we expect.
+
 Chaining and Specificity
+------------------------
+Adding more than one tag, class, or ID to a CSS selector increases the specificity of the CSS selector.
+
+.main p {
+  color: red;
+}
+
 Important
+---------
+There is one thing that is even more specific than IDs: !important
+
+!important can be applied to specific attributes instead of full rules. <------------- **
+It will override any style no matter how specific it is.
+
+The !important flag ...
+
 Multiple Selectors
-
-Cascading Style Sheets or CSS is a language web developers use to style the HTML content on a web page.
-
-Selectors
-Type 
-Universal
-Class
-Multiple Classes
-ID
-Attribute
-Pseudo-class
-... :focus, :visited, :disabled, and :active are all pseudo-classes.
+------------------
+..., we can separate the selectors by a comma to apply the same style to both.

@@ -1,0 +1,98 @@
+Selectors
+---------
+...
+How do you decide which elements will get the style? 
+With a selector.
+
+A selector is used to target the specific HTML element(s) to be styled by the declaration. 
+
+Type 
+----
+... the type selector matches the type of the element in the HTML document.
+
+p {  
+  color: blue;
+}
+
+This is an instance of using the type selector.
+... the type selector is sometimes referred to as the tag name or element selector.
+
+Universal
+---------
+The universal selector selects all elements of any type.
+... such as resetting default browser styling, or selecting all children of a parent element.
+
+Class
+-----
+... a period (.) must be prepended to the class's name. 
+
+Multiple Classes
+----------------
+
+ID
+--
+...
+In contrast to class which accepts multiple values, and can be used broadly throughout an HTML document,
+an element's id can only have a single value, and only be used once per page.
+
+... we prepend the id name with a number sign (#). 
+
+Attribute
+---------
+... some HTML elements use attributes to add extra detail or functionality to the element. 
+
+The attribute selector can be used to target HTML elements that already contain attributes. 
+
+Elements of the same type can be targeted differently by their attribute or attribute value. 
+This alleviates the need to add new code, like the class or id attributes.
+
+[href] {
+   color: magenta;
+}
+
+The most basic syntax is an attribute surrounded by square brackets. 
+In the above example: 
+[href] would target all elements with an href attribute and set the color to magenta.
+
+And it can get more granular from there, by adding type and/or attribute values. 
+One way is by using type [attribute*=value].
+...
+
+Pseudo-class
+------------
+You may have observed how the appearance of certain elements can change, 
+or be in a different state, after certain user interactions. 
+
+... :focus, :visited, :disabled, and :active are all pseudo-classes.
+
+Factors such as user interaction, site navigation, 
+and position in the DOM can all give elements a different state with pseudo-class.
+
+A pseudo-class can be attached to any selector. 
+It is always written as a colon : followed by a name. 
+
+p:hover {
+
+}
+
+Classes and IDs
+---------------
+
+Specificity
+-----------
+Specificity is the order by which, the browser decides which CSS styles will be displayed. 
+...
+Which style will win the "specificity war"? 
+
+Chaining
+--------
+When writing CSS rules, it’s possible to require an HTML element to have two or more CSS selectors at the same time.
+This is done by combining multiple selectors, which we will refer to as chaining. 
+
+Descendant Combinator
+---------------------
+CSS also supports selecting elements that are nested within other HTML elements, also known as descendants. 
+
+.list li {
+    
+}
