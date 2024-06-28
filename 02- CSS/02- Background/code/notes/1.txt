@@ -17,10 +17,10 @@ CIPS ROCA
 
 It does not matter if one of the values above are missing.
 
-Note: If one of the properties in the shorthand declaration is the background-size property, 
+If one of the properties in the shorthand declaration is the background-size property, 
 you MUST use a / (slash) to separate it from the background-position property.
 
-Note: If using multiple background-image sources but also want a background-color, 
+If using multiple background-image sources but also want a background-color, 
 the background-color parameter needs to be last in the list. <----------------------- *
 
 background-repeat <------ Specifies how to repeat the background images
