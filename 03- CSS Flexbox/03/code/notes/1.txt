@@ -1,0 +1,20 @@
+CSS justify-content Property
+----------------------------
+... aligns the flexible container's items when the items do not use all available space on the MAIN-axis.
+
+justify-content: flex-end; <---------- Items are positioned at the end of the container.
+
+CSS align-items Property
+------------------------
+... specifies the default alignment for item"S" inside a flexbox.
+In a flexbox container, the flexbox item"S" are aligned on the cross axis (opposite of flex-direction)
+... the items need available space around themselves in the appropriate direction.
+
+align-items: flex-start; <------------ Items are positioned at the beginning of the container.
+
+
+
+
+
+
+
