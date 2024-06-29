@@ -1,0 +1,68 @@
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  min-width: 50%;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  grid-template-rows: 10rem 16rem;
+  align-content: center;
+  justify-content: center;
+}
+
+.wrapper div {
+  position: relative;
+}
+
+.wrapper div > img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  /* Is used to specify how an <img> or <video> should be resized to fit its container, */
+  object-fit: cover;
+  opacity: 0.5;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+}
+
+.wrapper div > img:hover {
+  opacity: 1;
+}
+
+.title {
+  color: white;
+  background-color: black;
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  transition: visibility 1s;
+  -webkit-transition: visibility 1s;
+  -moz-transition: visibility 1s;
+  -ms-transition: visibility 1s;
+  -o-transition: visibility 1s;
+}
+
+img:hover + .title {
+  visibility: visible;
+}
