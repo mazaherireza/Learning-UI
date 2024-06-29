@@ -1,0 +1,98 @@
+Fallback Fonts
+--------------
+Most computers have a small set of typefaces pre-installed. 
+This small set includes serif fonts like Times New Roman and sans-serif fonts like Arial.
+These pre-installed fonts serve as fallback fonts if the stylesheet specifies a font which is not installed on a user's computer. 
+
+Fallback fonts help ensure a consistent experience for the diverse audience of users that visit a site.
+
+Linking Fonts 1
+---------------
+...
+New fonts are often centralized in directories made available for public use. 
+We refer to these fonts as non-user fonts. 
+
+Google Fonts is one such directory of thousands of open-source fonts, available for free use.
+
+https://fonts.google.com
+
+https://fonts.google.com/selection/embed
+
+ Web       Android        iOS        Flutter
+-----     ---------      -----      --------
+<link>    @import
+
+Embed code in the <head> of your html
+...
+
+Roboto: CSS class
+...
+
+Linking Fonts 2
+---------------
+When we have the link to the font of our choice, we can add the font to the <head> section of the HTML document, 
+using the <link> tag and the href. 
+...
+Once a font is linked, we can create CSS selectors to target elements, just as we do with other fonts.
+
+Font-Face 1
+-----------
+There are other ways to link non-user fonts that don't require the use of the <link> tag in the HTML document.
+
+CSS offers a way to import fonts directly into stylesheets with the @font-face property.
+
+To load fonts with the @font-face property:
+
+1. Instead of using the font's link in the HTML document, enter the link into the URL bar in the browser. 
+2. The browser will load the CSS rules. 
+
+You will need to focus on the rules that are directly labeled as /* latin */. 
+Some of the latin rules are on separate lines. 
+You will need each of these.
+
+3. Copy each of the CSS rules labeled latin, and paste the rules from the browser to the top of style.css.
+It is important to stress the need to copy the @font-face rules to the top of the stylesheet 
+for the font to load correctly in the project. 
+
+Font-Face 2
+-----------
+We can then use the fonts in the stylesheets as you would use any other font.
+
+Font-Face 3
+-----------
+... using a font from an external service. 
+
+We can modify our @font-face rule to use local font files as well. 
+We can supply the user with the desired font family and host it along with our site 
+instead of depending on a different site.
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto.woff2) format('woff2'),
+        url(fonts/Roboto.woff) format('woff'),
+        url(fonts/Roboto.tff) format('truetype');
+}
+
+We add a format for each file to specify which font to use. 
+Different browsers support different font types, so providing multiple font file options will support more browsers. 
+
+... .woff2 appears to be the way of the future, due to greatly reduced file sizes and improved performance, 
+but many browsers still don't support it. 
+
+https://www.fontsquirrel.com/
+
+@font-face ruleset 
+...
+... , fonts can be downloaded just like any other file on the web.
+They come in a few different file formats, such as:
+
+OTF (OpenType Font)
+TTF (TrueType Font)
+WOFF (Web Open Font Format)
+WOFF2 (Web Open Font Format 2)
+
+It’s a good idea to include TTF, WOFF, and WOFF2 formats with your @font-face rule 
+to ensure compatibility on all browsers.
+
+The @font-face at-rule is used as the selector. 
+Once the @font-face at-rule is defined, you can use the font in your stylesheet!
