@@ -1,0 +1,50 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+  background: var(--primary) linear-gradient(to top left, #fff, var(--primary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playground {
+  padding: 1rem;
+}
+
+#playground #playground-title {
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: grid;
+}
+
+.container .item {
+  padding: 1rem;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.un {
+  background-color: #ffc300;
+}
+.deux {
+  background-color: #ff5733;
+}
+.trois {
+  background-color: #daf7a6;
+}
+.quatre {
+  background-color: #2874a6;
+}
+.cinq {
+  background-color: #aed6f1;
+}
+.six {
+  background-color: #1b4f72;
+}
