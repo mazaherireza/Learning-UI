@@ -1,0 +1,60 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+  background: var(--primary) linear-gradient(to top left, #fff, var(--primary) );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playground {
+  padding: 1rem;
+}
+
+#playground #playground-title {
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-height: 60vh;
+  display: grid;
+  grid-template-columns: 4rem 8rem;
+  grid-template-rows: 8rem;
+  justify-content: space-evenly;
+  /* Is used to vertically align the whole grid inside the container. */
+  align-content: center;
+  gap: 0.5rem 1rem;
+}
+
+.container .item {
+  padding: 1rem;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.un {
+  background-color: #ffc300;
+}
+.deux {
+  background-color: #ff5733;
+}
+.trois {
+  background-color: #daf7a6;
+}
+.quatre {
+  background-color: #2874a6;
+}
+.cinq {
+  background-color: #aed6f1;
+}
+.six {
+  background-color: #1b4f72;
+}
