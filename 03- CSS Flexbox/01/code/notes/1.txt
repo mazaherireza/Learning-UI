@@ -1,0 +1,9 @@
+The Flexible Box Layout Module, 
+makes it easier to design flexible responsive layout structure without using float or positioning.
+
+CSS flex-flow Property
+----------------------
+... is a shorthand property for:
+
+flex-direction
+flex-wrap <------------ specifies whether the flexible items should wrap or not.
