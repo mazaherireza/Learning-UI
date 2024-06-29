@@ -1,0 +1,12 @@
+CSS order Property
+------------------
+... specifies the order of a flexible item relative to the rest of the flexible items inside the same container.
+Default value: 0
+
+...............
+Double-click the highlighted text in the Developer Tools pane,
+to turn it into and editable text filed.
+
+
+
+
