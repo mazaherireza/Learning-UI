@@ -105,4 +105,3 @@ Clear
 -----
 ...
 The clear property specifies how elements should behave when they bump into each other on the page.
-
