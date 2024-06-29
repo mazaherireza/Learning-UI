@@ -1,0 +1,89 @@
+Introduction to Color
+---------------------
+Using a numeric system allows us to take advantage of the whole spectrum of colors that browsers support.
+
+Colors in CSS can be described in 3 different ways:
+Named colors: English words that describe colors, also called keyword colors.
+RGB: numeric values that describe a mix of red, green, and blue.
+HSL: numeric values that describe a mix of hue, saturation, and lightness
+
+Hexadecimal
+-----------
+...
+Colors specified using this system are called hex colors. <-------- *
+
+A hex color begins with a hash character (#) which is followed by 3 or 6 characters. 
+The characters represent values for red, green and blue.
+
+white: #FFFFFF or #FFF
+
+RGB Colors
+----------
+There is another syntax for representing RGB values that uses decimal numbers.
+...
+
+h1 {
+  color: rgb(23, 45, 23);
+}
+
+Here, each of the 3 values represents a color component, and each can have a decimal number value from 0 to 255.
+
+... it's good to choose one and be consistent throughout your CSS, 
+because it's easier to compare hex to hex and decimal to decimal.
+
+The RGB color scheme is convenient because it's very close to how computers represent colors internally.
+
+Hex and RGB
+-----------
+The hexadecimal and RGB color system can represent many more colors than the small set of CSS named colors.
+
+256 * 256 * 256 
+Compare that to the 147 named CSS colors.
+
+Hue, Saturation, and Lightness
+------------------------------
+There's another equally powerful system in CSS called the hue-saturation-lightness color scheme, abbreviated as HSL.
+
+The first number represents the degree of the hue, and can be between 0 and 360. 
+The second and third numbers are percentages representing saturation and lightness respectively.
+
+color: hsl(120, 60%, 70%);
+
+Hue is the first number. 
+It refers to an angle on a color wheel. 
+Red is 0 degrees, Green is 120 degrees, Blue is 240 degrees, and then back to Red at 360.
+
+Saturation refers to the intensity or purity of the color.
+
+Lightness refers to how light or dark the color is. 
+Halfway, or 50%, is normal lightness. 
+
+HSL is convenient for adjusting colors. 
+In RGB, making the color a little darker may affect all 3 color components.
+In HSL, that's as easy as changing the lightness value.
+
+Opacity and Alpha
+-----------------
+...
+color: hsla(34, 100%, 50%, 0.1);
+
+The fourth value is the alpha. 
+This last value is sometimes called the opacity.
+
+Alpha is a decimal number from zero to one. 
+
+If alpha is zero, the color will be completely transparent. 
+
+You can think of the alpha value as, "the amount of the background to mix with the foreground".
+
+The RGB color scheme has a similar syntax for opacity, rgba color: 
+rgba(234, 45, 98, 0.33);
+
+Alpha can only be used with HSL and RGB colors; 
+we cannot add the alpha value to color: green, color: #FFFFF. 
+
+There is, however, a named color keyword for zero opacity, transparent. 
+It's equivalent to rgba(0, 0, 0, 0). 
+It's used like any other color keyword:
+
+color: transparent;
