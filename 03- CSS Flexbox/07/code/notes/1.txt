@@ -1,0 +1,15 @@
+CSS flex-basis Property
+-----------------------
+... specifies the initial length of a flexible item.
+Default value: auto
+
+flex-basis: 10em; <-------------- *** Has high priority.
+width: 4em; 
+
+min-width, max-width has high priority than flex-grow, flex-shrink and flex-basis.
+
+flex-basis: 0
+(Item 1) --------------> Item
+                           1
+
+                           
