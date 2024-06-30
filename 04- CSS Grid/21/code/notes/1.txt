@@ -1,7 +1,0 @@
-height: 100% gives the element, 100% height of its parent container.
-height: auto means the element height will depend upon the height of its children.
-
-fr automatically sets minimums, which respect the content inside. <---------------- ***
-So with frs, the minimum is automatic (i.e., auto) 
-and the maximum is the value you've set (e.g., 1fr, 2fr, etc.)
-You can override the sizing from default to min/max.
