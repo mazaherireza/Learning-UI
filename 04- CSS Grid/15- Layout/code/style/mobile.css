@@ -1,0 +1,19 @@
+h1#hero-title {
+  font-size: large;
+}
+
+#playground-title {
+  font-size: medium;
+}
+
+.container {
+  width: 90%;
+  grid-template-rows: repeat(3, 3rem);
+}
+
+.header,
+.main,
+.aside,
+.footer {
+  font-size: x-small;
+}
