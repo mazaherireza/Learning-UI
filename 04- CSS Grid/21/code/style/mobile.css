@@ -1,0 +1,8 @@
+.wrapper {
+  max-width: 50%;
+  grid-template: repeat(8, 1fr) / 1fr;
+}
+
+.product-card button {
+  font-size: x-small;
+}
