@@ -8,7 +8,7 @@ const renderToDOM = () => {
   const html = `
     <div class="product-card">
       <div class="img-wrapper">
-        <img src="./assets/images/Painting.png" alt="Painting" />
+        <img src="./assets/images/Perspolis.png" alt="Perspolis" />
       </div>
       <button>Buy</button>
     </div>
