@@ -1,0 +1,61 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+  background: var(--primary) linear-gradient(to top left, #fff, var(--primary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playground {
+  padding: 1rem;
+}
+
+#playground #playground-title {
+  margin-bottom: 1rem;
+}
+
+.container {
+  width: 80%;
+  height: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template: repeat(3, 4rem) / repeat(2, 8rem);
+  justify-content: center;
+  align-content: start;
+}
+
+.container .item {
+  padding: 1rem;
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.un {
+  background-color: #ffc300;
+  grid-area: 1 / 1 / span 2 / span 2;
+}
+.deux {
+  background-color: #ff5733;
+}
+.trois {
+  background-color: #daf7a6;
+}
+.quatre {
+  background-color: #2874a6;
+  order: 1;
+}
+.cinq {
+  background-color: #aed6f1;
+}
+.six {
+  background-color: #1b4f72;
+}
