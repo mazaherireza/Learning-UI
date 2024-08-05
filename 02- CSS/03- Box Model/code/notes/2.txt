@@ -30,7 +30,8 @@ The default border is medium none color, where color is the current color of the
 Border Radius
 -------------
 You can modify the corners of an element's border box with the border-radius property.
-You can create a border that is a perfect circle by setting the radius equal to the height of the box, or to 100%.
+You can create a border that is a perfect circle by setting the radius 
+equal to the height of the box, or to 100%. <--------------- ***
 
 Padding 1
 ---------
@@ -46,18 +47,16 @@ Margin refers to the space directly outside of the box.
 
 Auto
 -----
-The margin property also lets you center content.
+The margin property also lets you center content. <---------------- **
 However, you must follow a few syntax requirements. 
 
-The auto value instructs the browser to adjust the left and right margins 
-until the element is centered within its containing element.
-
-In order to center an element, a width must be set for that element.
+The auto value instructs the browser to adjust the left and right margins until the element is centered within its containing element.
+In order to center an element, a width must be set for that element. <--------------- **
 
 Margin Collapse
 ---------------
 ...
-Unlike horizontal margins, vertical margins do not add. 
+Unlike horizontal margins, vertical margins do not add. <------------------ **
 Instead, the larger of the two vertical margins sets the distance between adjacent elements.
 
 Minimum and Maximum Height and Width
@@ -71,12 +70,13 @@ The overflow property controls what happens to content that spills, or overflows
 
 hidden, scroll, visible (this is the default value) 
 
-The overflow property is set on a parent element to instruct a web browser how to render child elements.
+The overflow property is set on a parent element <----------------- **
+to instruct a web browser how to render child elements.
 
 Resetting Defaults
 ------------------
-All major web browsers have a default stylesheet they use in the absence of an external stylesheet.
-These default stylesheets are known as user agent stylesheets.
+All major web browsers have a default stylesheet, they use in the absence of an external stylesheet.
+These default stylesheets are known as user agent stylesheets. <---------------- *
 In this case, the term "user agent" is a technical term for the browser.
 
 User agent stylesheets often have default CSS rules that set default values for padding and margin.
@@ -91,7 +91,7 @@ Many developers choose to reset these default values so that they can truly work
 }
 
 ... resets the default margin and padding values of all HTML elements.
-It is often the first CSS rule in an external stylesheet.
+It is often the first CSS rule, in an external stylesheet. <------------------ *
 
 Visibility
 ----------
