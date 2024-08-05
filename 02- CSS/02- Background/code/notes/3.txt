@@ -9,7 +9,7 @@ A CSS rule, consists of the selector (here, h1) and all declarations inside of t
 
 Font Family
 -----------
-Font refers to the technical term typeface, or font family.
+Font, refers to the technical term typeface, or font family.
 To change the typeface of text on your web page, you can use the font-family property.
 
 When setting typefaces on a web page, keep the following points in mind:
@@ -47,4 +47,3 @@ color (this property styles an element's foreground color), background-color
 Opacity
 -------
 Opacity is the measure of how transparent an element is. 
-

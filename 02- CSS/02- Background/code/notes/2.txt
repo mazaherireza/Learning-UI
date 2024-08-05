@@ -26,7 +26,7 @@ background-image
 By default, a background-image is placed at the top-left corner of an element, 
 and repeated both vertically and horizontally.
 
-Tip: Always set a background-color to be used if the image is unavailable. <---------
+Tip: Always set a background-color to be used, if the image is unavailable. <--------- *
 
 none <------------ No background image will be displayed. This is default.
 
@@ -73,4 +73,4 @@ the one-value syntax (sets the width of the image (height becomes "auto")),
 the two-value syntax (first value: width of the image, second value: height), 
 and the multiple background syntax (separated with comma).
 
-auto <------- Default value. The background image is displayed in its original size     
+auto <------- Default value. The background image is displayed in its original size.     

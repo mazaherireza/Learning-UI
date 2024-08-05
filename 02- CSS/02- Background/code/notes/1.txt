@@ -13,11 +13,11 @@ background-origin
 background-clip
 background-attachment
 
-CIPS ROCA
+CIP/S ROCA
 
-It does not matter if one of the values above are missing.
+It does not matter if one of the values above, are missing.
 
-If one of the properties in the shorthand declaration is the background-size property, 
+If one of the properties in the shorthand declaration, is the background-size property, 
 you MUST use a / (slash) to separate it from the background-position property.
 
 If using multiple background-image sources but also want a background-color, 
@@ -26,4 +26,4 @@ the background-color parameter needs to be last in the list. <------------------
 background-repeat <------ Specifies how to repeat the background images
 background-origin <------ Specifies the positioning area of the background images
 background-clip <-------- Specifies the painting area of the background images
-background-attachment <--------- Specifies whether the background images are fixed of scrolls with the rest of the page
+background-attachment <--------- Specifies whether the background images are fixed or scrolls with the rest of the page
