@@ -8,7 +8,7 @@ A selector is used to target the specific HTML element(s) to be styled by the de
 
 Type 
 ----
-... the type selector matches the type of the element in the HTML document.
+... the type selector, matches the type of the element in the HTML document.
 
 p {  
   color: blue;
@@ -19,7 +19,7 @@ This is an instance of using the type selector.
 
 Universal
 ---------
-The universal selector selects all elements of any type.
+The universal selector, selects all elements of any type.
 ... such as resetting default browser styling, or selecting all children of a parent element.
 
 Class
@@ -33,7 +33,8 @@ ID
 --
 ...
 In contrast to class which accepts multiple values, and can be used broadly throughout an HTML document,
-an element's id can only have a single value, and only be used once per page.
+an element's id can only have a single value, <------------------- ***
+and only be used once per page.
 
 ... we prepend the id name with a number sign (#). 
 
@@ -47,10 +48,10 @@ Elements of the same type can be targeted differently by their attribute or attr
 This alleviates the need to add new code, like the class or id attributes.
 
 [href] {
-   color: magenta;
+  color: magenta;
 }
 
-The most basic syntax is an attribute surrounded by square brackets. 
+The most basic syntax is an attribute surrounded by square brackets. <------------- **
 In the above example: 
 [href] would target all elements with an href attribute and set the color to magenta.
 
@@ -68,7 +69,7 @@ or be in a different state, after certain user interactions.
 Factors such as user interaction, site navigation, 
 and position in the DOM can all give elements a different state with pseudo-class.
 
-A pseudo-class can be attached to any selector. 
+A pseudo-class can be attached to any selector. <--------------- **
 It is always written as a colon : followed by a name. 
 
 p:hover {

@@ -87,7 +87,7 @@ p.destination {
   font-family: cursive;
 }
 
-The code above would select only the p elements that have a class of destination.
+The code above, would select only the p elements that have a class of destination.
 
 Nested Elements
 ---------------

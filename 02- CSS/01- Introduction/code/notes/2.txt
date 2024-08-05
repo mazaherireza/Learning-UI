@@ -1,7 +1,7 @@
 Intro to CSS
 ------------
 While HTML is the fundamental structure of every web page, it can be visually unappealing on its own. 
-Cascading Style Sheets or CSS is a language web developers use to style the HTML content on a web page.
+Cascading Style Sheets or CSS is a language, web developers use to style the HTML content on a web page.
 
 CSS Anatomy
 ----------
@@ -42,7 +42,7 @@ Make sure to end the styles with a semicolon (;).
 
 Internal Stylesheet
 -------------------
-HTML allows you to write CSS code in its own dedicated section with a <style> element nested inside of the <head> element. 
+HTML allows you to write CSS code in its own dedicated section, with a <style> element nested inside of the <head> element. 
 The CSS code inside the <style> element is often referred to as an internal stylesheet.
 
 External Stylesheet
