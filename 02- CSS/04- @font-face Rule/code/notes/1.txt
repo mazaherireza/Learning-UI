@@ -1,6 +1,6 @@
 Typography
 ----------
-The art of arranging text on a page.
+The art of arranging text on a page. <---------- *
 
 Font Family
 -----------
@@ -10,14 +10,14 @@ To change the typeface of text on your web page, you can use the font-family pro
 
 Web Safe Fonts
 --------------
-There is a selection of fonts that will appear the same across all browsers and operating systems. 
+There is a selection of fonts that will appear the same, across all browsers and operating systems. <-------- *
 These fonts are referred to as web safe fonts. 
 You can check out a complete list of web safe fonts here.
 https://www.cssfontstack.com/
 
 Fallback Fonts and Font Stacks
 ------------------------------
-Web safe fonts are good fallback fonts that can be used if your preferred font is not available.
+Web safe fonts are good fallback fonts that can be used if your preferred font, is not available.
 
 h1 {
   font-family: Caslon, Georgia, 'Times New Roman';
@@ -26,7 +26,6 @@ h1 {
 Georgia and Times New Roman are fallback fonts to Caslon. 
 
 When you specify a group of fonts, you have what is known as a font stack. <--------- **
-
 A font stack usually contains a list of similar-looking fonts. 
 
 Serif and Sans-Serif
@@ -34,14 +33,13 @@ Serif and Sans-Serif
 Serif fonts have extra details on the ends of each letter, as opposed to Sans-Serif fonts, 
 which do not have the extra details.
 
-serif and sans-serif are also keyword values that can be added as a final fallback font 
-if nothing else in the font stack is available.
+serif and sans-serif are also keyword values that can be added as a final fallback font if nothing else in the font stack is available.
 
 h1 {
   font-family: Caslon, Georgia, 'Times New Roman', serif;
 }
 
-... the font stack has 4 fonts. 
+... the font stack has 4 fonts. <------------ *
 If the first 3 fonts aren’t available, the browser will use whatever serif font is available on the system.
 
 Font Weight
@@ -50,16 +48,15 @@ font-weight property controls how bold or thin text appears.
 It can be specified with keywords or numerical values.
 
 ...
-bolder: One font weight bolder than the element's parent value
+bolder: One font weight bolder than the element's parent value <--------------- *
 
 Numerical values can range from 1 (lightest) to 1000 (boldest), but it is common practice to use increments of 100. 
 (Valid values are multiples of 100 within this range)
 
 A font weight of 400 is equal to the keyword value normal, and a font weight of 700 is equal to bold.
 
-It's important to note that not all fonts can be assigned a numeric font weight, 
-and not all numeric font weights are available to all fonts. 
-
+... not all fonts can be assigned a numeric font weight,
+and not all numeric font weights are available to all fonts. <---------------- **
 It’s a good practice to look up the font you are using to see which font-weight values are available.
 
 Font Style
@@ -75,7 +72,7 @@ The default amount of space between words is usually 0.25em.
 
 Letter Spacing
 --------------
-The technical term for adjusting the spacing between letters is called "kerning".
+The technical term for adjusting the spacing between letters is called "kerning". <-------------- **
 
 Text Transformation
 -------------------
@@ -85,13 +82,11 @@ Text Alignment
 
 Line Height
 -----------
-We can use the line-height property to set how tall we want the line containing our text to be, 
-regardless of the height of the text.
-
+... to set how tall we want the line containing our text to be, regardless of the height of the text.
 Line heights can take one of several values:
 
 1. A unitless number, such as 1.2. 
-This number is an absolute value that will compute the line height as a ratio of the font size.
+This number is an absolute value that will compute the line height as a ratio of the font size. <------------ **
 
 2. A number specified by unit, such as 12px. 
 This number can be any valid CSS unit, such as pixels, percents, ems, or rems. 
