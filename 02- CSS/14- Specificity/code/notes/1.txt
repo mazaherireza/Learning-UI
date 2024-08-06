@@ -1,9 +1,7 @@
 CSS Specificity
 ---------------
-
 If there are two or more CSS rules that point to the same element, 
-the selector with the highest specificity value will "win", 
-and its style declaration will be applied to that HTML element.
+the selector with the highest specificity value, will "win", and its style declaration will be applied to that HTML element.
 
 Think of specificity as a score/rank that determines which style declaration is ultimately applied to an element.
 
@@ -12,7 +10,6 @@ Specificity Hierarchy
 Every CSS selector has its place in the specificity hierarchy.
 
 There are four categories which define the specificity level of a selector:
-
 Inline styles
 IDs 
 Classes, pseudo-classes, attribute selectors
@@ -30,5 +27,4 @@ More Specificity Rules Examples
 
 Equal specificity: the latest rule wins.
 
-The universal selector (*) and inherited values have a specificity of 0,
-The universal selector (*) and inherited values are ignored!
+The universal selector (*) and inherited values have a specificity of 0, ... are ignored!
