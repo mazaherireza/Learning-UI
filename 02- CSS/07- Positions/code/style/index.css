@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -19,6 +19,7 @@ main {
   width: 40%;
   margin: 1.5rem auto;
   position: relative;
+  opacity: 0.6;
   transition: opacity 2s;
   -webkit-transition: opacity 2s;
   -moz-transition: opacity 2s;
@@ -32,11 +33,10 @@ main {
 
 .artist-name {
   display: none;
-  font-weight: bolder;
+  font-weight: bold;
   font-size: large;
-  padding: 0.25rem;
-  color: #db0030;
-  border: 1px solid #db0030;
+  padding: 0.25rem 0.5rem;
+  background-color: #c41e3a;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
@@ -45,7 +45,7 @@ main {
 }
 
 .artist-container:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .artist-container:hover .artist-name {
