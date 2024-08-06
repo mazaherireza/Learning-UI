@@ -1,4 +1,4 @@
-CSS Pseudo-classes <-------------- ***
+CSS Pseudo-classes 
 ------------------
 pseudo- (pretended and not real)
 
@@ -13,7 +13,7 @@ In HTML, the root element is ALWAYS the html element. <-------------- ***
   CSS declarations;
 }
 
-The :empty selector matches every element that has no children (including text nodes). <-------------- ***
+The :empty selector matches every element that has no children (including text nodes). 
 
 The :checked selector, matches every checked <input> element (only for radio buttons and checkboxes) and <option> element.
 
@@ -21,4 +21,4 @@ input[type="checkbox"]:checked + .alert {
   display: inline-block;
 }
 
-The :not(selector) selector, matches every element that is NOT the specified element/selector. <-------------- ***
+The :not(selector) selector, matches every element that is NOT the specified element/selector.
