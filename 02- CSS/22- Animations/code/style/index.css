@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -18,7 +18,7 @@ main {
 .loader {
   width: 50%;
   /* height of <h2 class="playground-title">Playground</h2> (h2 element) + vertical padding*/
-  height: calc(100vh - (27px + 1rem + 1rem));
+  height: calc(100dvh - (27.778px + 1rem + 1rem));
   display: flex;
   justify-content: center;
   align-items: center;

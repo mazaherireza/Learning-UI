@@ -1,6 +1,6 @@
 CSS Animations
 --------------
-CSS allows animation of HTML elements without using JavaScript! <-------------- ***
+CSS allows animation of HTML elements without using JavaScript!
 
 What are CSS Animations?
 
@@ -8,7 +8,7 @@ An animation lets an element gradually change from one style to another.
 To use CSS animation, you MUST first specify some keyframes for the animation. <------------ ***
 Keyframes hold what styles the element will have at certain times.
 
-The @keyframes Rule <--------------------- **
+The @keyframes Rule 
 -------------------
 When you specify CSS styles inside the @keyframes rule, 
 the animation will gradually change from the current style to the new style at certain times.
@@ -27,8 +27,7 @@ div {
   animation-dutation: 4s; <---------- defines how long an animation should take to COMPLETE.
 }
 
-The animation-direction property specifies whether an animation should be played forwards, 
-backwards or in alternate cycles.
+The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles.
 
 animation-name
 animation-duration
