@@ -5,8 +5,7 @@ body {
 }
 
 main {
-  background: var(--primary, #db0030)
-    linear-gradient(#fff, var(--primary, #db0030));
+  background: var(--primary) linear-gradient(#fff, var(--primary));
   display: flex;
   align-items: center;
   justify-content: center;
