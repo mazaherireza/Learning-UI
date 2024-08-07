@@ -1,6 +1,6 @@
 CSS The object-fit Property
 ---------------------------
-... is used to specify how an <img> or <video> should be resized to fit its container. <------------ ***
+... is used to specify how an <img> or <video> should be resized to fit its container.
 
 This property tells the content to fill the container in a variety of ways.
 such as "preserve that aspect ratio" or ... 
@@ -11,5 +11,3 @@ contain <------- The image keeps its aspect ratio, but is resized to fit within 
 cover <--------  The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
 none
 scale-down
-
-
