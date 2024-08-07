@@ -1,6 +1,6 @@
 CSS 2D Transforms
 -----------------
-CSS transforms allow you to move, rotate, scale, and skew elements. <-------------- ***
+CSS transforms allow you to move, rotate, scale, and skew elements.
 
 With the CSS transform property, you can use the following 2D transformation methods:
 translate()
@@ -14,13 +14,13 @@ skew()
 matrix()
 
 The translate() method moves an element from its current position 
-(according to the parameters given for the X-axis and the Y-axis). <-------------- ***
+(according to the parameters given for the X-axis and the Y-axis).
 
 The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.
 Using negative values will rotate the element counter-clockwise.
 
 The scale() method increases or decreases the size of an element 
-(according to the parameters given for the width and height). <-------------- ***
+(according to the parameters given for the width and height). 
 
 The skew() method skews an element along the X and Y-axis by the given angles.
 
