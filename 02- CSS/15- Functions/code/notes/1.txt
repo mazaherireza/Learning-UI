@@ -1,6 +1,6 @@
 CSS Functions
 -------------
-CSS functions are used as a value for various CSS properties.
+... are used as a value for various CSS properties.
 
 The calc() function performs a calculation to be used as the property value.
 The following operators can be used: + - * /
@@ -12,7 +12,7 @@ selector {
 }
 ...
 
-The minmax() CSS function defines a size range greater than or equal to min and less than or equal to max. 
+The minmax() CSS function defines a size range (greater than or equal to min and less than or equal to max). 
 It is used with CSS Grids. <---------------- ***
 
 The clamp() CSS function clamps a middle value within a range of values between a defined minimum bound and a maximum bound. 
@@ -20,5 +20,4 @@ The function takes three parameters:
 a minimum value, a preferred value, and a maximum allowed value.
 
 (If you clamp something in a particular place, you hold it there tightly)
-
-... without the use of media queries.
+... without the use of media queries. <--------- **
