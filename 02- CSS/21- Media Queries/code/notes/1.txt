@@ -34,8 +34,8 @@ A media query consists of a media type and can contain one or more media feature
 The mediatype is optional (if omitted, it will be set to all). <--------------------- ***
 However, if you use not or only, you MUST also specify a mediatype.
 
-The result of the query is true if the specified media type matches the type of device 
-the document is being displayed on and ALL media features in the media query are true.
+The result of the query is true if the specified media type matches the type of device the document is being displayed on 
+and ALL media features in the media query are true.
 
 When a media query is true, the corresponding style sheet or style rules are applied, following the normal cascading rules.
 
