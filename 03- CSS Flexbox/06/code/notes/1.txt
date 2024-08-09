@@ -1,17 +1,9 @@
 CSS flex-grow Property 
 ----------------------
-... specifies how much the item will grow RELATIVE to the rest of the flexible items inside the same container. <----- **
+... specifies how much the item will grow RELATIVE to the rest of the flexible items inside the same container.
 Default value: 0
 
 CSS flex-shrink Property
 ------------------------
 ... specifies how the item will shrink RELATIVE to the rest of the flexible items inside the same container.
 Default value: 1
-
-
-
-
-
-
-
-
