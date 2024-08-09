@@ -1,10 +1,9 @@
-CSS align-content Property <------------------- ***
+CSS align-content Property 
 --------------------------
 ... specifies how flex lines are distributed along the CROSS axis in a flexbox container.
 (similar to how justify-content aligns INDIVIDUAL items within the main-axis)
 
-In flexbox layout, the main axis is in the flex-direction, 
-and the cross axis is perpendicular to the main axis
+In flexbox layout, the main axis is in the flex-direction, and the cross axis is perpendicular to the main axis.
 
 align-content: flex-start; <---------- Lines are packed toward the start of the flex container.
 
@@ -14,13 +13,9 @@ Both align-content and align-items function on the cross-axis.
 
 align-content
 ... aligns flex-LINES with respect to each other along the cross-axis. 
-... works only when the "flex-wrap" property is set to "wrap".
+... works only when the "flex-wrap" property is set to "wrap". <---------------- ***
 ... has no effect when the number of flex-LINE is 1.
 
 align-items
-... aligns teh flex-items WITHIN flex-LINE along the cross-axis.
+... aligns the flex-items WITHIN flex-LINE along the cross-axis.
 .. does not depend on the number of flex-LINES.
-
-
-
-
