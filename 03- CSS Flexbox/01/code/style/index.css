@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -36,8 +36,9 @@ main {
   background-color: white;
   width: 4rem;
   height: 4rem;
-  text-align: center;
-  line-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
   font-size: small;
   border-radius: 0.25rem;
