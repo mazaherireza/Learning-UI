@@ -1,12 +1,10 @@
 flex 
 ----
-The flex CSS shorthand property,
-sets how a flex item will grow or shrink to fit the space available in its flex container.
+The flex CSS shorthand property, sets how a flex item will grow or shrink to fit the space available in its flex container.
 
 Constituent properties
-
+----------------------
 ... is a shorthand for the following CSS properties:
-
 flex-grow
 flex-shrink
 flex-basis
@@ -14,36 +12,30 @@ flex-basis
 The 2nd and 3rd are optional. <---------------- ***
 
 Default value: 0 1 auto
-none Same as 1 1 auto
+flex: none; (Same as 1 1 auto)
 
 CSS
-
+---
 1- Keyword values
-
 flex: auto;
 flex: initial;
 flex: none;
 
 2- One value, unitless number: flex-grow (flex-basis is then equal to 0). <----------------- ***
-
 flex: 2;
 
 3- One value, width/height: flex-basis
-
 flex: 10em;
 flex: 30%;
 flex: min-content
 
 4- Two values: flex-grow | flex-basis
-
 flex: 1 4em;
 
 5- Two values: flex-grow | flex-shrink
-
 flex: 2 3;
 
 6- Three values: flex-grow | flex-shrink | flex-basis
-
 flex: 2 2 40%;
 
 7- Global values
