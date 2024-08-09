@@ -1,4 +1,4 @@
-Main Axis (flex-direction) <---------------- ***
+Main Axis (flex-direction)
 
 CSS justify-content Property
 ----------------------------
