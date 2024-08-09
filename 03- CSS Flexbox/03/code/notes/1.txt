@@ -11,10 +11,3 @@ In a flexbox container, the flexbox item"S" are aligned on the cross axis (oppos
 ... the items need available space around themselves in the appropriate direction.
 
 align-items: flex-start; <------------ Items are positioned at the beginning of the container.
-
-
-
-
-
-
-
