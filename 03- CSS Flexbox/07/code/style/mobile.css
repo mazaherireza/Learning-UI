@@ -1,11 +1,23 @@
 h1#hero-title {
-  font-size: larger;
+  font-size: large;
 }
 
 #playground-title {
-  font-size: large;
+  font-size: medium;
 }
 
 .flex-container {
   width: 90%;
+}
+
+.flex-item {
+  width: 3rem;
+  height: 3rem;
+  font-size: x-small;
+}
+
+.third {
+  min-width: 2rem;
+  max-width: 3rem;
+  flex-basis: 2.5rem;
 }
