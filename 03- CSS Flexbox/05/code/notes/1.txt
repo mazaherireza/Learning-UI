@@ -4,9 +4,4 @@ CSS order Property
 Default value: 0
 
 ...............
-Double-click the highlighted text in the Developer Tools pane,
-to turn it into and editable text filed.
-
-
-
-
+Double-click the highlighted text in the Developer Tools pane, to turn it into and editable text filed.
