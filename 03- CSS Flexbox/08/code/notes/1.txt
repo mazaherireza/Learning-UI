@@ -1,5 +1,5 @@
-flex 
-----
+CSS flex Property
+-----------------
 The flex CSS shorthand property, sets how a flex item will grow or shrink to fit the space available in its flex container.
 
 Constituent properties
@@ -11,35 +11,32 @@ flex-basis
 
 The 2nd and 3rd are optional. <---------------- ***
 
-Default value: 0 1 auto
-flex: none; (Same as 1 1 auto)
+flex: auto; (Default value, Same as 1 1 auto)
+flex: initial; (Same as 0 1 auto)
+flex: none; (Same as 0 0 auto)
 
-CSS
----
-1- Keyword values
-flex: auto;
-flex: initial;
-flex: none;
+Syntax
+------
+1- Keyword value
 
-2- One value, unitless number: flex-grow (flex-basis is then equal to 0). <----------------- ***
-flex: 2;
+2- One value, unitless number: flex-grow (flex-basis is then equal to 0). <------------- ***
+flex: 2; // flex: 2 1 0;
 
-3- One value, width/height: flex-basis
-flex: 10em;
+3- One value, width/height: flex-basis <--------------- ***
+flex: 10em; // flex: 1 1 10em;
 flex: 30%;
 flex: min-content
 
-4- Two values: flex-grow | flex-basis
-flex: 1 4em;
+4- Two values: flex-grow | flex-basis <--------------- ***
+flex: 1 80px; // flex: 1 1 80px;
 
-5- Two values: flex-grow | flex-shrink
-flex: 2 3;
+5- Two values: flex-grow | flex-shrink <--------------- ***
+flex: 2 3; // flex: 2 3 0;
 
 6- Three values: flex-grow | flex-shrink | flex-basis
-flex: 2 2 40%;
+flex: 2 2 40%; 
 
 7- Global values
-
 flex: inherit;
 flex: initial;
 flex: revert;
@@ -49,17 +46,15 @@ flex: unset;
 The flex property may be specified using 1, 2, or 3 values.
 
 One-value syntax:
-
 the value must be one of:
 a valid value for <flex-grow>: then the shorthand expands to flex: <flex-grow> 1 0.
 a valid value for <flex-basis>: then the shorthand expands to flex: 1 1 <flex-basis>.
 the keyword "none" or one of the global keywords.
 
 Two-value syntax:
+The first value MUST be a valid value for flex-grow. <---------------- ****
 
-The first value must be a valid value for flex-grow. <---------------- ****
-
-The second value must be one of:
+The second value MUST be one of:
 a valid value for flex-shrink: then the shorthand expands to flex: <flex-grow> <flex-shrink> 0.
 a valid value for flex-basis: then the shorthand expands to flex: <flex-grow> 1 <flex-basis>.
 
@@ -69,29 +64,19 @@ Three-value syntax:
 Values
 ------
 
-initial
+flex-grow
+Defines the flex-grow of the flex item. 
+Negative values are considered invalid. 
+Defaults to 1 when omitted. (initial is 0)
 
-(The item is sized according to its width and height properties.)
-It shrinks to its minimum size to fit the container, 
-but does not grow to absorb any extra free space in the flex container. 
+flex-shrink
+...
+Defaults to 1 when omitted. (initial is 1)
 
-This is equivalent to setting "flex: 0 1 auto".
+flex-basis
+...
+A preferred size of 0 must have a unit to avoid being interpreted as a flexibility. <-------- ?
+Defaults to 0 when omitted. 
+The initial value is auto.
 
-auto
-
-(The item is sized according to its width and height properties,)
-but grows to absorb any extra free space in the flex container, and shrinks to its minimum size to fit the container. 
-
-This is equivalent to setting "flex: 1 1 auto".
-
-none
-
-(The item is sized according to its width and height properties.) 
-It is fully inflexible: it neither shrinks nor grows in relation to the flex container. 
-
-This is equivalent to setting "flex: 0 0 auto".
-
-CSS align-self Property
------------------------
-... specifies the alignment in the block direction for the selected item inside a flexbox or ...
-Default value: auto
+[Incomplete]
