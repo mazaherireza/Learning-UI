@@ -4,3 +4,4 @@
 - CSS
 - CSS Flexbox
 - CSS Grid
+- Tailwind CSS
