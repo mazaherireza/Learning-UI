@@ -1,0 +1,12 @@
+npm install tailwindcss --save-dev
+(added 113 packages in 2m)
+
+npx tailwindcss init
+(Created Tailwind CSS config file: tailwind.config.js)
+
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+____________________________________________________________
+yarn add tailwindcss --dev 
+---------------------------
+Tailwind CSS IntelliSense <--------- Extension
+
