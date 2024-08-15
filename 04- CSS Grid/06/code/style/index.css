@@ -1,11 +1,11 @@
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 main {
-  background: var(--primary) linear-gradient(to top left, #fff, var(--primary) );
+  background: var(--primary) linear-gradient(to top left, #fff, var(--primary));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,19 +20,17 @@ main {
 }
 
 .container {
-  max-height: 60vh;
+  height: 40dvh;
   display: grid;
   grid-template-columns: 4rem 8rem;
-  grid-template-rows: 8rem;
-  justify-content: space-evenly;
+  grid-template-rows: 4rem 4rem 2rem;
+  justify-content: space-around;
   /* Is used to vertically align the whole grid inside the container. */
-  align-content: center;
+  align-content: end;
   gap: 0.5rem 1rem;
 }
 
 .container .item {
-  padding: 1rem;
-  text-align: center;
   font-size: large;
   font-weight: bold;
   display: flex;
