@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -22,16 +22,13 @@ main {
 .container {
   display: grid;
   grid-template-columns: 4rem 8rem;
-  grid-template-rows: 8rem;
+  grid-template-rows: 6rem 4rem 2rem;
   /* Is used to align the whole grid inside the container. */
   justify-content: space-evenly;
-  /* R C */
-  gap: 0.5rem 1rem;
+  row-gap: 0.5rem;
 }
 
 .container .item {
-  padding: 1rem;
-  text-align: center;
   font-size: large;
   font-weight: bold;
   display: flex;
