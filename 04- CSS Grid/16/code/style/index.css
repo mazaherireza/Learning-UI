@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -21,7 +21,7 @@ main {
 
 .container {
   width: 80%;
-  height: 70vh;
+  height: 70dvh;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -31,7 +31,6 @@ main {
 }
 
 .container .item {
-  padding: 1rem;
   font-size: large;
   font-weight: bold;
   display: flex;
