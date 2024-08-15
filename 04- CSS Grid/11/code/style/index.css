@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -20,11 +20,10 @@ main {
 }
 
 .container {
-  max-height: 60vh;
+  height: 50dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  align-content: center;
 }
 
 .container .item {
