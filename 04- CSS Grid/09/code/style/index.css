@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -20,16 +20,14 @@ main {
 }
 
 .container {
-  max-height: 60vh;
+  height: 40vh;
   display: grid;
   grid-template-columns: min-content max-content;
-  grid-template-rows: 8rem;
-  align-content: center;
+  grid-template-rows: 4rem 4rem 4rem;
+  align-content: space-between;
 }
 
 .container .item {
-  padding: 1rem;
-  text-align: center;
   font-size: large;
   font-weight: bold;
   display: flex;
