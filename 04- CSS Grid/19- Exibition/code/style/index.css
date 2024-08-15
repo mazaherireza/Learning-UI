@@ -1,5 +1,5 @@
 main {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,7 @@ main {
 
 .wrapper {
   max-width: 45%;
-  min-height: 70vh;
+  min-height: 70dvh;
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(4, 1fr);
   align-content: center;

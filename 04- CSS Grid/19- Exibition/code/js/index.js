@@ -1,7 +1,5 @@
 const $ = document;
-
 const wrapper = $.querySelector(".wrapper");
-
 const LIMIT = 8;
 
 const renderToDOM = () => {
@@ -13,7 +11,6 @@ const renderToDOM = () => {
       <button>Buy</button>
     </div>
   `;
-
   for (let index = 0; index < LIMIT; index++) {
     wrapper.insertAdjacentHTML("beforeend", html);
   }
