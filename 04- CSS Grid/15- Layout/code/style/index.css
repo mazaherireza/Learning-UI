@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -21,12 +21,12 @@ main {
 
 .container {
   width: 60%;
-  height: 40vh;
+  height: 40dvh;
   margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 3rem);
   grid-template-areas: "header header header header" "main main _ aside" "footer footer footer footer";
 }
 
