@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -20,13 +20,12 @@ main {
 }
 
 .container {
-  height: 70vh;
+  height: 70dvh;
   display: inline-grid;
   grid-template: repeat(3, 4rem) / repeat(3, 1fr);
 }
 
 .container .item {
-  padding: 1rem;
   font-size: large;
   font-weight: bold;
   display: flex;
