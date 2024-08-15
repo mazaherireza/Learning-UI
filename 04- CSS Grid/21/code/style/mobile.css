@@ -6,6 +6,10 @@ h1#hero-title {
   font-size: medium;
 }
 
+.container {
+  grid-auto-columns: 3rem;
+}
+
 .container .item {
   font-size: small;
 }

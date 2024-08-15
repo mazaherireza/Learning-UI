@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -20,16 +20,15 @@ main {
 }
 
 .container {
-  height: 70vh;
+  height: 70dvh;
   display: grid;
   /* ... sets a size for the columns, ... affects only columns with the size not set. */
-  grid-auto-columns: 5rem;
+  grid-auto-columns: 4rem;
   /* ... controls how auto-placed items get inserted in the grid. */
   grid-auto-flow: column;
 }
 
 .container .item {
-  padding: 1rem;
   font-size: large;
   font-weight: bold;
   display: flex;
