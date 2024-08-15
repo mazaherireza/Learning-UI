@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -20,7 +20,7 @@ main {
 }
 
 .container {
-  height: 70vh;
+  height: 70dvh;
   display: grid;
   grid-template: repeat(2, 4rem) / repeat(2, 1fr);
   /* ... affects only rows with the size not set. */
@@ -28,7 +28,6 @@ main {
 }
 
 .container .item {
-  padding: 1rem;
   font-size: large;
   font-weight: bold;
   display: flex;
