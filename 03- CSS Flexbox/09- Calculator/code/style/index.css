@@ -58,3 +58,25 @@ body {
 .arrow {
   font-size: xx-large;
 }
+
+.animate {
+  animation: resize 0.5s;
+  -webkit-animation: resize 0.5s;
+}
+
+@keyframes resize {
+  from {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}

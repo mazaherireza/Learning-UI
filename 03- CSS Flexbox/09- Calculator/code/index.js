@@ -29,10 +29,8 @@ const applyOperation = (intBuffer) => {
 
 const calculate = (operator) => {
   if (buffer === "0") return;
-
   if (total === 0) total = +buffer;
   else applyOperation(+buffer);
-
   previousOperator = operator;
   buffer = "0";
 };
@@ -74,10 +72,19 @@ const clickHandler = (target) => {
   populateScreen();
 };
 
+const applyAnimation = (target) => {
+  target.classList.add("animate");
+  target.onanimationend = () => {
+    target.classList.remove("animate");
+  };
+};
+
 const bootstrap = () => {
   btnList.forEach((btn) => {
     btn.onclick = (event) => {
-      clickHandler(event.target);
+      const { target } = event;
+      clickHandler(target);
+      applyAnimation(target);
     };
   });
 };
