@@ -1,0 +1,60 @@
+body {
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 25%;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.row {
+  display: flex;
+  height: 3rem;
+}
+
+.screen,
+.btn {
+  padding: 1rem;
+  font-size: large;
+  font-weight: bold;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.screen {
+  height: 4rem;
+  background-color: black;
+  color: white;
+}
+
+.btn {
+  background-color: var(--gray-500);
+  color: black;
+  justify-content: center;
+  flex-basis: 25%;
+}
+
+.operation {
+  background-color: var(--primary);
+  color: white;
+}
+
+.double {
+  flex-grow: 2;
+}
+
+.triple {
+  flex-grow: 3;
+}
+
+.arrow {
+  font-size: xx-large;
+}
