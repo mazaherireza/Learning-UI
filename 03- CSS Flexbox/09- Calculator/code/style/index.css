@@ -9,11 +9,6 @@ body {
   width: 25%;
 }
 
-.buttons {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
 .row {
   display: flex;
   height: 3rem;
@@ -21,7 +16,6 @@ body {
 
 .screen,
 .btn {
-  padding: 1rem;
   font-size: large;
   font-weight: bold;
   border: 1px solid black;
@@ -30,6 +24,7 @@ body {
 }
 
 .screen {
+  padding: 1rem;
   height: 4rem;
   background-color: black;
   color: white;
