@@ -1,0 +1,77 @@
+body {
+  height: 100dvh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 25%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 3rem;
+}
+
+.screen,
+.btn {
+  font-size: large;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.screen {
+  height: 4rem;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+.btn {
+  background-color: var(--gray-500);
+  color: black;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.operation {
+  background-color: var(--primary);
+  color: white;
+}
+
+.double {
+  grid-column: 1 / span 2;
+}
+
+.triple {
+  grid-column: 1 / span 3;
+}
+
+.arrow {
+  font-size: xx-large;
+}
+
+.animate {
+  animation: resize 0.5s;
+  -webkit-animation: resize 0.5s;
+}
+
+@keyframes resize {
+  from {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
