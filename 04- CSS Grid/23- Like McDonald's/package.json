@@ -1,0 +1,19 @@
+{
+  "name": "Like-McDonald's",
+  "version": "1.0.0",
+  "description": "Responsive Webpage like McDonald's",
+  "main": "./index.html",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  },
+  "Keywords": [
+    "Learing",
+    "Tailwind CSS",
+    "Design",
+    "Mobile First",
+    "Responsive",
+    "McDonald's"
+  ],
+  "author": "Reza Mazaheri",
+  "license": "ISC"
+}

@@ -9,8 +9,56 @@
       href="assets/images/favicon.png"
       type="image/png"
     />
-    <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="/style/output.css" />
+    <script src="./index.js" defer></script>
   </head>
-  <body></body>
+  <body class="font-poppins">
+    <header>
+      <div class="container">
+        <nav class="flex justify-between">
+          <div class="flex items-center gap-x-8">
+            <div
+              class="w-10 h-10 rounded-sm bg-primary flex items-center justify-center sm:w-12 sm:h-12 sm:rounded-md"
+            >
+              <a href="#">
+                <img src="./assets/images/Logo.svg" alt="Logo" />
+              </a>
+            </div>
+
+            <ul
+              class="menu fixed w-32 -left-32 top-0 bottom-0 z-10 bg-secondary flex flex-col gap-y-3 px-4 py-8 rounded-tr-md rounded-br-md text-sm transition-all md:static md:w-max md:bg-white md:flex-row md:gap-x-4 xl:gap-x-12 md:items-center md:justify-between md:font-semibold"
+            >
+              <li class="text-grey md:font-semibold">
+                <a href="#">Homepage</a>
+              </li>
+              <li>
+                <a href="#">Menu</a>
+              </li>
+              <li>
+                <a href="#">Sale off</a>
+              </li>
+              <li>
+                <a href="#">News</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex items-center gap-x-2 md:gap-x-4">
+            <button class="text-primary bg-white border border-primary btn">
+              Sign In
+            </button>
+            <button class="text-white bg-primary btn">Login</button>
+          </div>
+          <img
+            class="hamburger-icon w-8 md:hidden"
+            src="./assets/images/Burger.svg"
+            alt="Icon"
+          />
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>
