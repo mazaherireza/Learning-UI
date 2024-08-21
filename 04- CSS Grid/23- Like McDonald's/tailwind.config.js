@@ -15,7 +15,8 @@ module.exports = {
           3: "#e3e3e3",
           4: "#f1f1f1",
         },
-        break: {
+        black: {
+          DEFAULT: "#000000",
           1: "#323232",
           2: "#504f4f",
         },
@@ -24,7 +25,6 @@ module.exports = {
           5: "#fff6a3",
         },
         white: "#ffffff",
-        black: "#000000",
       },
     },
   },

@@ -9,7 +9,8 @@
       href="assets/images/favicon.png"
       type="image/png"
     />
-    <link rel="stylesheet" href="/style/output.css" />
+    <link rel="stylesheet" href="./style/output.css" />
+    <link rel="stylesheet" href="./style//index.css" />
     <script src="./index.js" defer></script>
   </head>
   <body class="font-poppins">
@@ -48,9 +49,9 @@
 
           <div class="flex items-center gap-x-2 md:gap-x-4">
             <button class="text-primary bg-white border border-primary btn">
-              Sign In
+              Sign in
             </button>
-            <button class="text-white bg-primary btn">Login</button>
+            <button class="text-white bg-primary btn">Log in</button>
           </div>
           <img
             class="hamburger-icon w-8 md:hidden"
@@ -58,6 +59,72 @@
             alt="Icon"
           />
         </nav>
+
+        <div
+          class="presentation mt-16 text-center grid grid-cols-1 md:grid-cols-2 md:items-center md:text-left"
+        >
+          <div class="intro">
+            <p class="text-4xl text-primary font-semibold lg:text-5xl lg:leading-normal">
+              Order your favourite food
+            </p>
+            <p class="my-3 text-black-2 font-normal md:text-lg">
+              Hamburger has many flavors, have you tried Cheese Beef Hamburger?
+            </p>
+          </div>
+
+          <div class="img w-3/4 justify-self-center relative sm:w-1/2 md:w-3/4" >
+            <img
+              class="img w-full object-contain"
+              src="./assets/images/Presentatoin.svg"
+              alt="Hamburger"
+            />
+            <div
+              class="delivery mt-2 max-w-32 flex flex-col gap-y-1 bg-grey-4 border border-grey-4 rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl p-3 md:justify-self-end"
+            >
+              <div class="flex items-center gap-x-2">
+                <img class="w-4" src="./assets/images/Alarm.svg" alt="Alarm" />
+                <span class="text-black-1">Delivery</span>
+              </div>
+              <span class="text-sm text-grey self-center">30 Mins</span>
+            </div>
+          </div>
+
+          <div
+            class="order w-4/5 h-10 mt-32 grid grid-cols-1 justify-self-center md:mt-4"
+          >
+            <div class="justify-self-start text-sm md:text-base text-black-1">
+              <span class="font-light">Total Order: </span
+              ><span class="font-medium">$5.39</span>
+            </div>
+            <div class="mt-4 flex items-center justify-between gap-x-4">
+              <div
+                class="min-w-32 h-10 flex items-center justify-between shadow-md rounded-3xl px-4 py-2 border border-grey-4 bg-white md:min-w-40"
+              >
+                <button class="w-4">
+                  <img src="./assets/images/Plus.svg" alt="Plus" />
+                </button>
+                <span
+                  class="text-secondary text-sm font-medium border-r border-r-grey-4 border-l border-l-grey-4 p-3 md:text-base"
+                  >3</span
+                >
+                <button class="w-4">
+                  <img src="./assets/images/Minus.svg" alt="Minus" />
+                </button>
+              </div>
+
+              <button
+                class="min-w-32 flex items-center justify-between bg-secondary shadow-md rounded-3xl px-4 py-2 md:min-w-40 md:justify-center md:gap-x-2"
+              >
+                <img
+                  class="w-4"
+                  src="./assets/images/Shopping_Basket.svg"
+                  alt="Shopping Basket"
+                />
+                <span class="text-black-1 font-medium text-sm md:text-base">Order now</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   </body>
