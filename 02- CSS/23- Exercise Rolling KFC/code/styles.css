@@ -1,0 +1,46 @@
+body,
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 16rem;
+  height: 16rem;
+  border: 0.16rem solid black;
+  animation: spin 16s linear infinite;
+  -webkit-animation: spin 16s linear infinite;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+
+.square img {
+  width: 8rem;
+  height: 8rem;
+  animation: reversed-spin 16s linear infinite;
+  -webkit-animation: reversed-spin 16s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reversed-spin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
