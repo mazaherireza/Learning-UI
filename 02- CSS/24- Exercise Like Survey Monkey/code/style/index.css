@@ -1,0 +1,77 @@
+body {
+  min-height: 100dvh;
+}
+
+header .img-wrapper {
+  width: 16rem;
+  height: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  margin-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+form h3 {
+  margin-bottom: 1rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#radio-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+label {
+  cursor: pointer;
+  max-width: 10rem;
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  border: 1px solid transparent;
+  font-weight: bold;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.index {
+  font-size: small;
+  width: 1rem;
+  height: 1rem;
+  color: white;
+  background-color: var(--priamry, #00bf6f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+input[type="radio"]:checked + label {
+  color: var(--priamry, #00bf6f);
+  border: 1px solid var(--priamry, #00bf6f);
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
