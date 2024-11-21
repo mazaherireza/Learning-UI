@@ -1,0 +1,11 @@
+.course-wrapper {
+  max-width: 15rem;
+}
+
+.course-wrapper h3 {
+  font-size: medium;
+}
+
+.course-wrapper p {
+  font-size: small;
+}
