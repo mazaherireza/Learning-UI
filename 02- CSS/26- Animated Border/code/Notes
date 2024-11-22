@@ -1,0 +1,21 @@
+CSS @property Rule
+------------------
+... is used to define custom CSS properties directly in the stylesheet 
+without having to run any JavaScript.
+
+@property --mainColor {
+    syntax: "<color>",
+    inherits: true;
+    initial-value: lightgray;
+}
+
+... its default value is lightgray.
+
+The benefits of using @property:
+Type checking: You must specify the data type of the custom property,
+such as <number>, <color>, <length>, etc.
+
+Set default value: You set a default value for the custom property.
+...
+
+Set inheritance behavior: ...

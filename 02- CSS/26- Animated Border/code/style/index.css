@@ -1,0 +1,56 @@
+main {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@property --positionX {
+  syntax: "<percentage>";
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --positionY {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+.division {
+  font-size: small;
+  font-weight: bold;
+  border: 0.15rem solid transparent;
+  border-image: radial-gradient(
+      ellipse at var(--positionX) var(--positionY),
+      var(--primary),
+      var(--white)
+    )
+    8;
+  padding: 1rem;
+  animation: exchange 1s linear infinite;
+  -webkit-animation: exchange 4s linear infinite;
+}
+
+@keyframes exchange {
+  20% {
+    --positionX: 100%;
+    --positionY: 50%;
+  }
+  40% {
+    --positionX: 100%;
+    --positionY: 100%;
+  }
+  60% {
+    --positionX: 50%;
+    --positionY: 100%;
+  }
+  80% {
+    --positionX: 0%;
+    --positionY: 50%;
+  }
+  100% {
+    --positionX: 50%;
+    --positionY: 0%;
+  }
+}
