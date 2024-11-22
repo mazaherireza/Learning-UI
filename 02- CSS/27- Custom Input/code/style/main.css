@@ -1,0 +1,13 @@
+:root {
+  --primary: #d70040;
+  --white: #ffffff;
+  --black: #1b1212;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
