@@ -55,18 +55,18 @@ body {
 }
 
 .animate {
-  animation: resize 0.5s;
-  -webkit-animation: resize 0.5s;
+  animation: resize 0.1s;
+  -webkit-animation: resize 0.1s;
 }
 
 @keyframes resize {
   from {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-  }
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
   to {
     transform: scale(1);
     -webkit-transform: scale(1);
