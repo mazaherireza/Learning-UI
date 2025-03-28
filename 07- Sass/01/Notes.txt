@@ -1,0 +1,40 @@
+The term SCSS is an acronym for Sassy Cascading Style Sheets. <--------- *
+... a more advanced and evolved variant of the CSS.
+... is an extension to CSS.
+
+... CSS extension language ...
+
+CMD
+---
+1) npm init -y
+2) npm install sass --save-dev
+
+package.json
+------------
+...
+"scripts": {
+  "build:css": "sass scss:css",
+  "watch:css": "sass --watch scss:css"
+}
+
+To compile all files once:
+npm run build:css
+
+To watch for changes and automatically recompile:
+npm run watch:css
+
+Import CSS files into index.html
+
+main.scss
+@use "index";
+@use "main";
+
+index.html
+<link rel="stylesheet" href="css/main.css" ...
+
+styles.css.map <------------ Debug
+
+...
+CMD
+---
+Sass is watching for changes. Press Ctrl + C to stop.
