@@ -1,0 +1,24 @@
+$primary: #c41e3a;
+$seconday: #d2042d;
+$white: #fff;
+
+body {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin centered-box {
+  background: $primary radial-gradient($primary, $white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  @include centered-box;
+}
+
+#playground {
+  padding: 1rem;
+}

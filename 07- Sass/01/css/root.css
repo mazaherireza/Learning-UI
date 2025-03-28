@@ -1,0 +1,38 @@
+body {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+  background: #c41e3a radial-gradient(#c41e3a, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playground {
+  padding: 1rem;
+}
+
+* {
+  font-family: "Time New Roman", Times, serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 #hero-title {
+  font-size: larger;
+}
+
+#playground-title {
+  font-size: large;
+}
+
+body {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/*# sourceMappingURL=root.css.map */
