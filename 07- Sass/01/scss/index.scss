@@ -1,6 +1,4 @@
-$primary: #c41e3a;
-$seconday: #d2042d;
-$white: #fff;
+@use "variables" as var;
 
 body {
   min-height: 100dvh;
@@ -9,7 +7,7 @@ body {
 }
 
 @mixin centered-box {
-  background: $primary radial-gradient($primary, $white);
+  background: var.$primary radial-gradient(var.$primary, var.$white);
   display: flex;
   align-items: center;
   justify-content: center;
