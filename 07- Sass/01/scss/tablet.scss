@@ -1,6 +1,8 @@
 body {
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template: {
+    -columns: 1fr;
+    -rows: repeat(3, 1fr);
+  }
 }
 
 main {
