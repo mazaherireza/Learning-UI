@@ -1,7 +1,7 @@
 body {
   grid-template: {
-    -columns: 1fr;
-    -rows: repeat(3, 1fr);
+    columns: 1fr;
+    rows: repeat(3, 1fr);
   }
 }
 
