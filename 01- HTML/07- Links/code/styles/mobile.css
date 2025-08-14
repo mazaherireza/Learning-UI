@@ -1,0 +1,20 @@
+body {
+  main {
+    #hero-title {
+      font-size: larger;
+    }
+  }
+
+  section {
+    &#playground {
+      #playground-title {
+        font-size: medium;
+      }
+    }
+
+    a,
+    p {
+      font-size: small;
+    }
+  }
+}
