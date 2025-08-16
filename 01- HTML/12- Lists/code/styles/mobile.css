@@ -1,0 +1,19 @@
+body {
+  main {
+    #hero-title {
+      font-size: larger;
+    }
+  }
+
+  section {
+    #playground-title {
+      font-size: large;
+    }
+
+    ol {
+      li {
+        font-size: x-small;
+      }
+    }
+  }
+}

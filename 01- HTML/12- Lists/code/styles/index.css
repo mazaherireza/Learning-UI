@@ -1,0 +1,34 @@
+body {
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  main {
+    background: #d1d8e0 radial-gradient(#d1d8e0, #ffffff);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    padding: 1rem;
+
+    #playground-title {
+      margin-block-end: 1rem;
+    }
+
+    ol {
+      margin-inline-start: 1rem;
+
+      font-size: small;
+      font-weight: bold;
+
+      li {
+        margin-block-end: 0.5rem;
+      }
+    }
+  }
+}
