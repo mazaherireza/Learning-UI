@@ -1,0 +1,60 @@
+body {
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  main {
+    background: #d1d8e0 radial-gradient(#d1d8e0, #ffffff);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    padding: 1rem;
+
+    #playground-title {
+      margin-block-end: 1rem;
+    }
+
+    table {
+      inline-size: 70%;
+
+      margin-inline: auto;
+      border: 1px solid black;
+      border-collapse: collapse;
+
+      tr {
+        th,
+        td {
+          border: 1px solid black;
+
+          padding: 0.25rem 1rem;
+
+          text-align: center;
+        }
+
+        td {
+          &:first-child {
+            font-size: small;
+            font-weight: bold;
+          }
+
+          &:last-child {
+            overflow: hidden;
+
+            max-inline-size: 25ch;
+
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}

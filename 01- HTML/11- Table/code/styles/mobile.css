@@ -1,0 +1,34 @@
+body {
+  main {
+    #hero-title {
+      font-size: larger;
+    }
+  }
+
+  section {
+    #playground-title {
+      font-size: large;
+    }
+
+    table {
+      inline-size: 90%;
+
+      caption {
+        font-size: small;
+      }
+
+      tr {
+        th,
+        td {
+          font-size: x-small;
+        }
+
+        td {
+          &:first-child {
+            font-size: x-small;
+          }
+        }
+      }
+    }
+  }
+}
