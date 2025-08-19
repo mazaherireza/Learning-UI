@@ -1,0 +1,64 @@
+body {
+  block-size: 100vh;
+  min-block-size: 100dvh;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  main {
+    background: #d1d8e0 radial-gradient(#d1d8e0, #ffffff);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    padding: 1rem;
+
+    .form-wrapper {
+      max-inline-size: 60%;
+
+      border: 1px solid black;
+
+      box-shadow: 0.5rem 0.5rem 0.125rem silver;
+
+      padding: 1rem;
+      margin: 1rem auto;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      border-radius: 0.5rem;
+
+      img {
+        inline-size: 60%;
+      }
+
+      form {
+        inline-size: 100%;
+
+        input {
+          inline-size: 100%;
+
+          padding: 0.5rem 0.75rem;
+          margin-block-end: 1rem;
+        }
+
+        input[type="password"] {
+          letter-spacing: 0.25rem;
+
+          font-weight: bolder;
+        }
+
+        input[type="submit"] {
+          cursor: pointer;
+
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
