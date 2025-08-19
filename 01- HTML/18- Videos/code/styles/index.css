@@ -1,0 +1,29 @@
+body {
+  block-size: 100vh;
+  min-block-size: 100dvh;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  main {
+    background: #d1d8e0 radial-gradient(#d1d8e0, #ffffff);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    padding: 1rem;
+
+    video {
+      inline-size: 50%;
+
+      display: block;
+
+      margin: 1rem auto;
+
+      border-radius: 0.5rem;
+    }
+  }
+}

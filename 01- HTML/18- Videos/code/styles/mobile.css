@@ -1,0 +1,17 @@
+body {
+  main {
+    #hero-title {
+      font-size: larger;
+    }
+  }
+
+  section {
+    #playground-title {
+      font-size: large;
+    }
+
+    video {
+      inline-size: 60%;
+    }
+  }
+}
