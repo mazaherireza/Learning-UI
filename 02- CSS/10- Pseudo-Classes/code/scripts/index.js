@@ -1,6 +1,6 @@
 const $ = document;
 const form = $.querySelector("form");
-const programmingLanguages = ["C", "PHP", "Python", "Golang"];
+const programmingLanguages = ["C", "C++", "PHP", "Python", "Golang"];
 
 let content = "";
 const populateContent = () => {
