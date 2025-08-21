@@ -1,0 +1,46 @@
+body {
+  block-size: 100vh;
+  min-block-size: 100dvh;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  main {
+    background: #db0030 linear-gradient(#fff, #db0030);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    padding: 1rem;
+
+    #playground-title {
+      margin-block-end: 1rem;
+    }
+
+    .title {
+      position: relative;
+      max-inline-size: fit-content;
+
+      text-transform: uppercase;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+
+        margin: auto 0;
+
+        block-size: 0.15rem;
+
+        background-color: #db0030;
+
+        transform: rotate(5deg);
+      }
+    }
+  }
+}
