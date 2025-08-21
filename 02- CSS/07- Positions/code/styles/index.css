@@ -1,0 +1,59 @@
+body {
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  main {
+    background: #db0030 linear-gradient(#fff, #db0030);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    padding: 1rem;
+
+    .artist-container {
+      inline-size: 40%;
+
+      margin: 1.5rem auto;
+
+      position: relative;
+
+      opacity: 0.6;
+      transition: opacity 2s;
+
+      .artist-img {
+        inline-size: 100%;
+      }
+
+      .artist-name {
+        display: none;
+
+        font-weight: bold;
+
+        padding: 0.25rem 0.5rem;
+
+        background-color: #c41e3a;
+        border-radius: 0.5rem;
+      }
+
+      &:hover {
+        opacity: 1;
+
+        .artist-name {
+          display: block;
+
+          position: absolute;
+          inset-block-start: 85%;
+          inset-inline-start: 50%;
+
+          transform: translate(-50%, -85%);
+        }
+      }
+    }
+  }
+}

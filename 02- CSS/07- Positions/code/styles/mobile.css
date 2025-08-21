@@ -1,0 +1,23 @@
+body {
+  main {
+    #hero-title {
+      font-size: large;
+    }
+  }
+
+  section {
+    #playground-title {
+      font-size: medium;
+    }
+
+    .artist-container {
+      inline-size: 60%;
+
+      .artist-name {
+        font-size: small;
+        
+        padding: 0.25rem;
+      }
+    }
+  }
+}
