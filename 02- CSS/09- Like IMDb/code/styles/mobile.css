@@ -1,0 +1,33 @@
+main {
+  #hero-title {
+    font-size: large;
+  }
+
+  section {
+    #playground-title {
+      font-size: medium;
+    }
+
+    .container {
+      .media-card {
+        inline-size: 12rem;
+
+        .media-info {
+          gap: 0.5rem;
+
+          .media-rating {
+            font-size: small;
+          }
+
+          .media-title {
+            font-size: medium;
+          }
+
+          .media-actions {
+            block-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
