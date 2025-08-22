@@ -1,0 +1,25 @@
+body {
+  main {
+    #hero-title {
+      font-size: large;
+    }
+  }
+
+  section {
+    #playground-title {
+      font-size: medium;
+    }
+
+    .artist-card {
+      inline-size: 12rem;
+
+      .artist-img {
+        block-size: 12rem;
+      }
+
+      .artist-title {
+        font-size: x-small;
+      }
+    }
+  }
+}

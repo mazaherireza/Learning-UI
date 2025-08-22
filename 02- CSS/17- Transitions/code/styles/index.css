@@ -1,0 +1,50 @@
+body {
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  main {
+    background: #db0030 linear-gradient(#fff, #db0030);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    padding: 1rem;
+
+    #playground-title {
+      margin-block-end: 1rem;
+    }
+
+    .artist-card {
+      inline-size: 15rem;
+
+      margin: 0 auto;
+      padding-block-end: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+
+      transition: all 2s;
+
+      .artist-img {
+        inline-size: 100%;
+        block-size: 15rem;
+
+        background-image: url("/assets/images/shahla-riahi.png");
+        background-size: cover;
+        background-position: center;
+      }
+
+      &:hover {
+        box-shadow: 0.5rem 0.5rem 0.25rem silver;
+      }
+    }
+  }
+}
