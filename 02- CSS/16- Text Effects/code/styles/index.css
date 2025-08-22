@@ -1,0 +1,40 @@
+body {
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  main {
+    background: #db0030 linear-gradient(#fff, #db0030);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    padding: 1rem;
+
+    .book-title {
+      margin-block-start: 1rem;
+
+      inline-size: 10rem;
+      block-size: 2rem;
+
+      background-color: rgba(192, 192, 192, 0.25);
+
+      padding: 0 0.5rem;
+
+      font-size: small;
+      font-weight: bold;
+      line-height: 2rem;
+
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      border-radius: 0.25rem;
+    }
+  }
+}
