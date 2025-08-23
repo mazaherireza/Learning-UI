@@ -1,0 +1,18 @@
+body {
+  main {
+    #hero-title {
+      font-size: large;
+    }
+  }
+
+  section {
+    #playground-title {
+      font-size: medium;
+    }
+
+    .container {
+      inline-size: 60%;
+      block-size: 70%;
+    }
+  }
+}
