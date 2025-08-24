@@ -1,0 +1,46 @@
+body {
+  main {
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+
+    display: grid;
+    place-content: center;
+
+    form {
+      position: relative;
+
+      label {
+        font-size: x-small;
+        font-weight: bold;
+
+        background-color: var(--white);
+        color: var(--black);
+
+        position: absolute;
+        inset-block-start: -25%;
+        inset-inline-start: 5%;
+
+        padding-inline: 0.25rem;
+      }
+
+      input[type="text"] {
+        font-family: "Times New Roman", Times, serif;
+
+        background-color: var(--white);
+
+        border: 2px solid var(--black);
+        border-radius: 0.25rem;
+
+        padding: 0.25rem 0.5rem;
+
+        &:focus {
+          border: 2px solid var(--primary);
+
+          + label {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}
