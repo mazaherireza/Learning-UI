@@ -1,0 +1,80 @@
+body {
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+
+  header {
+    .img-wrapper {
+      inline-size: 16rem;
+      block-size: 6rem;
+
+      margin-inline: auto;
+
+      img {
+        inline-size: 100%;
+        block-size: auto;
+      }
+    }
+  }
+
+  main {
+    form {
+      padding: 1rem;
+
+      h3 {
+        margin-block-end: 1rem;
+      }
+
+      #radio-buttons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        label {
+          cursor: pointer;
+
+          max-inline-size: 10rem;
+
+          padding: 0.25rem 0.5rem;
+
+          display: flex;
+          align-items: center;
+          column-gap: 0.25rem;
+
+          border: 1px solid transparent;
+
+          font-weight: bold;
+
+          transition: all 1s;
+        }
+
+        .index {
+          font-size: small;
+
+          inline-size: 1rem;
+          inline-size: 1rem;
+
+          color: white;
+          background-color: var(--priamry, #00bf6f);
+
+          display: grid;
+          place-content: center;
+
+          border-radius: 999rem;
+        }
+
+        input[type="radio"] {
+          display: none;
+
+          &:checked {
+            + label {
+              color: var(--priamry, #00bf6f);
+
+              border: 1px solid var(--priamry, #00bf6f);
+              border-radius: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 const $ = document;
 const radioButtons = $.querySelector("#radio-buttons");
+
 const jobTypes = [
   "Full-time",
   "Part-time",

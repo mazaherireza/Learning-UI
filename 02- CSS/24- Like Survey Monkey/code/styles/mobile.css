@@ -1,0 +1,33 @@
+body {
+  header {
+    .img-wrapper {
+      inline-size: 12rem;
+      block-size: 4rem;
+    }
+  }
+
+  main {
+    font-size: small;
+
+    padding-inline: 1.5rem;
+
+    form {
+      #radio-buttons {
+        gap: 0.25rem;
+
+        label {
+          column-gap: 0.5rem;
+
+          margin-block-end: 0.25rem;
+        }
+
+        .index {
+          font-size: x-small;
+
+          inline-size: 0.8rem;
+          block-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
