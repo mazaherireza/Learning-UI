@@ -1,0 +1,66 @@
+@keyframes preloader {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+body {
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  main {
+    background: var(--primary) linear-gradient(#fff, var(--primary));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    padding: 1rem;
+
+    .loader {
+      inline-size: 50%;
+      /* height of <h2 class="playground-title">Playground</h2> (h2 element) + vertical padding*/
+      block-size: (100vh - (27.778px + 1rem + 1rem));
+      block-size: calc(100dvh - (27.778px + 1rem + 1rem));
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      margin: 0 auto;
+
+      .element {
+        inline-size: 1.2rem;
+        block-size: 1.2rem;
+
+        background-color: var(--primary);
+
+        animation: preloader 1s infinite;
+
+        border-radius: 999rem;
+
+        &:nth-child(2) {
+          animation-delay: 0.4s;
+        }
+
+        &:nth-child(3) {
+          animation-delay: 0.8s;
+        }
+      }
+    }
+  }
+}
