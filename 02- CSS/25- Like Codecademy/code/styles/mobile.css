@@ -1,0 +1,15 @@
+body {
+  main {
+    .course-wrapper {
+      max-inline-size: 15rem;
+
+      h3 {
+        font-size: medium;
+      }
+
+      p {
+        font-size: small;
+      }
+    }
+  }
+}

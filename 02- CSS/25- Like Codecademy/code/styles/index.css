@@ -1,0 +1,42 @@
+body {
+  background-color: var(--color-beige-100);
+
+  main {
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+
+    display: grid;
+    place-content: center;
+
+    .course-wrapper {
+      max-inline-size: 18rem;
+
+      background-color: var(--color-white);
+
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      border: 2px solid var(--color-navy-900);
+      border-radius: 0.25rem;
+
+      padding: 0.5rem;
+
+      position: relative;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+
+        transform: translate(-0.75rem, 0.75rem);
+
+        background-color: var(--color-navy-800);
+
+        border-radius: inherit;
+      }
+    }
+  }
+}

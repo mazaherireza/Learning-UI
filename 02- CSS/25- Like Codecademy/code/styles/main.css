@@ -5,12 +5,14 @@
   --color-pink-0: #fff5ff;
   --color-pink-400: #f966ff;
   --color-gray-100: #f5f5f5;
+  --color-white: #fff;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+
   margin: 0;
   padding: 0;
 }
