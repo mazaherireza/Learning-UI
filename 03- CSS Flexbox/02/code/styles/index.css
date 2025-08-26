@@ -1,0 +1,58 @@
+body {
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  main {
+    background: var(--primary) linear-gradient(#fff, var(--primary));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    padding: 1rem;
+
+    #playground-title {
+      margin-block-end: 1rem;
+    }
+
+    .flex-container {
+      background-color: var(--primary);
+
+      inline-size: 60%;
+      block-size: 60dvh;
+
+      padding: 0.5rem;
+
+      margin: 0 auto;
+
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 0.5rem;
+
+      border-radius: 0.25rem;
+
+      .flex-item {
+        background-color: white;
+
+        inline-size: 4rem;
+        block-size: 4rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-weight: bold;
+        font-size: small;
+
+        border-radius: 0.25rem;
+      }
+    }
+  }
+}
