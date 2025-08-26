@@ -1,0 +1,14 @@
+:root {
+  --primary: #db0030;
+}
+
+*,
+*::before,
+*::after {
+  font-family: "Times New Roman", sans-serif;
+
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
