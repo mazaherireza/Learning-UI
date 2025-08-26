@@ -24,14 +24,13 @@ body {
       background-color: var(--primary);
 
       inline-size: 60%;
-      block-size: 30vh;
+      block-size: 30dvh;
 
       padding: 0.5rem;
       margin: 0 auto;
 
       display: flex;
-      flex-flow: column wrap;
-      align-content: center;
+      flex-flow: column nowrap;
       gap: 0.5rem;
 
       border-radius: 0.25rem;
@@ -49,7 +48,7 @@ body {
         font-weight: bold;
         font-size: small;
 
-        border-radius: 0.25rem;
+        flex: auto;
       }
     }
   }

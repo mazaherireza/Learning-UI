@@ -1,7 +1,26 @@
-CSS order Property
-------------------
-... specifies the order of a flexible item relative to the rest of the flexible items inside the same container.
-Default value: 0
+CSS align-content Property <------------------- ***
+--------------------------
+... specifies how flex lines are distributed along the CROSS axis in a flexbox container.
+(similar to how justify-content aligns INDIVIDUAL items within the main-axis)
 
-...............
-Double-click the highlighted text in the Developer Tools pane, to turn it into and editable text filed.
+In flexbox layout, the main axis is in the flex-direction, 
+and the cross axis is perpendicular to the main axis
+
+align-content: flex-start; <---------- Lines are packed toward the start of the flex container.
+
+Difference between align-content and align-items <------------------ ****
+
+Both align-content and align-items function on the cross-axis.
+
+align-content
+... aligns flex-LINES with respect to each other along the cross-axis. 
+... works only when the "flex-wrap" property is set to "wrap".
+... has no effect when the number of flex-LINE is 1.
+
+align-items
+... aligns teh flex-items WITHIN flex-LINE along the cross-axis.
+.. does not depend on the number of flex-LINES.
+
+
+
+

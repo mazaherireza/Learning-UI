@@ -1,9 +1,7 @@
-CSS flex-grow Property 
-----------------------
-... specifies how much the item will grow RELATIVE to the rest of the flexible items inside the same container.
+CSS order Property
+------------------
+... specifies the order of a flexible item relative to the rest of the flexible items inside the same container.
 Default value: 0
 
-CSS flex-shrink Property
-------------------------
-... specifies how the item will shrink RELATIVE to the rest of the flexible items inside the same container.
-Default value: 1
+...............
+Double-click the highlighted text in the Developer Tools pane, to turn it into and editable text filed.

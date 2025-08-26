@@ -18,6 +18,13 @@ body {
         block-size: 3rem;
 
         font-size: x-small;
+
+        &.third {
+          min-inline-size: 2rem;
+          max-inline-size: 3rem;
+
+          flex-basis: 2.5rem;
+        }
       }
     }
   }

@@ -1,82 +1,9 @@
-CSS flex Property
------------------
-The flex CSS shorthand property, sets how a flex item will grow or shrink to fit the space available in its flex container.
+CSS flex-basis Property
+-----------------------
+... specifies the initial length of a flexible item.
+Default value: auto
 
-Constituent properties
-----------------------
-... is a shorthand for the following CSS properties:
-flex-grow
-flex-shrink
-flex-basis
+flex-basis: 10em; <-------------- *** Has high priority.
+width: 4em; 
 
-The 2nd and 3rd are optional. <---------------- ***
-
-flex: auto; (Default value, Same as 1 1 auto)
-flex: initial; (Same as 0 1 auto)
-flex: none; (Same as 0 0 auto)
-
-Syntax
-------
-1- Keyword value
-
-2- One value, unitless number: flex-grow (flex-basis is then equal to 0). <------------- ***
-flex: 2; // flex: 2 1 0;
-
-3- One value, width/height: flex-basis <--------------- ***
-flex: 10em; // flex: 1 1 10em;
-flex: 30%;
-flex: min-content
-
-4- Two values: flex-grow | flex-basis <--------------- ***
-flex: 1 80px; // flex: 1 1 80px;
-
-5- Two values: flex-grow | flex-shrink <--------------- ***
-flex: 2 3; // flex: 2 3 0;
-
-6- Three values: flex-grow | flex-shrink | flex-basis
-flex: 2 2 40%; 
-
-7- Global values
-flex: inherit;
-flex: initial;
-flex: revert;
-flex: revert-layer;
-flex: unset;
-
-The flex property may be specified using 1, 2, or 3 values.
-
-One-value syntax:
-the value must be one of:
-a valid value for <flex-grow>: then the shorthand expands to flex: <flex-grow> 1 0.
-a valid value for <flex-basis>: then the shorthand expands to flex: 1 1 <flex-basis>.
-the keyword "none" or one of the global keywords.
-
-Two-value syntax:
-The first value MUST be a valid value for flex-grow. <---------------- ****
-
-The second value MUST be one of:
-a valid value for flex-shrink: then the shorthand expands to flex: <flex-grow> <flex-shrink> 0.
-a valid value for flex-basis: then the shorthand expands to flex: <flex-grow> 1 <flex-basis>.
-
-Three-value syntax:
-...
-
-Values
-------
-
-flex-grow
-Defines the flex-grow of the flex item. 
-Negative values are considered invalid. 
-Defaults to 1 when omitted. (initial is 0)
-
-flex-shrink
-...
-Defaults to 1 when omitted. (initial is 1)
-
-flex-basis
-...
-A preferred size of 0 must have a unit to avoid being interpreted as a flexibility. <-------- ?
-Defaults to 0 when omitted. 
-The initial value is auto.
-
-[Incomplete]
+min-width, max-width has high priority than flex-grow, flex-shrink and flex-basis.                           

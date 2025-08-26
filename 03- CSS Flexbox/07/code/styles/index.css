@@ -23,7 +23,7 @@ body {
     .flex-container {
       background-color: var(--primary);
 
-      inline-size: 60%;
+      inline-size: 80%;
       block-size: 30dvh;
 
       padding: 0.5rem;
@@ -51,11 +51,12 @@ body {
 
       border-radius: 0.25rem;
 
-      &.third {
-        min-inline-size: 6rem;
-        max-inline-size: 10rem;
+      &.first {
+        flex-grow: 3;
+      }
 
-        flex-basis: 8rem;
+      &.third {
+        flex-shrink: 2;
       }
     }
   }

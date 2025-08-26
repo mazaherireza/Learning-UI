@@ -30,25 +30,32 @@ body {
       margin: 0 auto;
 
       display: flex;
-      flex-flow: column nowrap;
+      flex-flow: row nowrap;
       gap: 0.5rem;
 
       border-radius: 0.25rem;
+    }
 
-      .flex-item {
-        background-color: white;
+    .flex-item {
+      background-color: white;
 
-        inline-size: 4rem;
-        block-size: 4rem;
+      inline-size: 4rem;
+      block-size: 4rem;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-        font-weight: bold;
-        font-size: small;
+      font-weight: bold;
+      font-size: small;
 
-        flex: auto;
+      border-radius: 0.25rem;
+
+      &.third {
+        min-inline-size: 6rem;
+        max-inline-size: 10rem;
+
+        flex-basis: 8rem;
       }
     }
   }

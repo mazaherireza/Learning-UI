@@ -12,6 +12,13 @@ body {
 
     .flex-container {
       inline-size: 90%;
+
+      .flex-item {
+        inline-size: 3rem;
+        block-size: 3rem;
+
+        font-size: x-small;
+      }
     }
   }
 }
