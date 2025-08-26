@@ -1,20 +1,22 @@
-main {
-  #hero-title {
-    font-size: large;
-  }
-}
-
-section {
-  #playground-title {
-    font-size: medium;
+body {
+  main {
+    #hero-title {
+      font-size: large;
+    }
   }
 
-  .flex-container {
-    .flex-item {
-      inline-size: 3rem;
-      block-size: 3rem;
+  section {
+    #playground-title {
+      font-size: medium;
+    }
 
-      font-size: x-small;
+    .flex-container {
+      .flex-item {
+        inline-size: 3rem;
+        block-size: 3rem;
+
+        font-size: x-small;
+      }
     }
   }
 }
