@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1200px) {
+  body {
+    .container {
+      max-inline-size: 960px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    .container {
+      max-inline-size: 720px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    .container {
+      max-inline-size: 540px;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    .container {
+      max-inline-size: 100%;
+    }
+  }
+}
