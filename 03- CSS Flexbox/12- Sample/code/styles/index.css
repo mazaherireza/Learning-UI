@@ -10,7 +10,7 @@ body {
   }
 
   header {
-    .container {
+    > .container {
       section {
         &:first-child {
           display: grid;
@@ -88,7 +88,7 @@ body {
   }
 
   main {
-    .container {
+    > .container {
       text-align: center;
 
       > span {
@@ -119,11 +119,83 @@ body {
 
       .img-wrapper {
         max-inline-size: 25rem;
-        
+
         margin-inline: auto;
 
         img {
           inline-size: 100%;
+        }
+      }
+    }
+
+    .testimonial {
+      background-color: blue;
+
+      .container {
+        color: white;
+
+        text-align: center;
+
+        padding-block: 3rem;
+
+        > p {
+          margin-block: 2rem;
+        }
+
+        > ul {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-evenly;
+          gap: 1rem;
+
+          > li {
+            flex-basis: 20%;
+
+            .tweet {
+              display: flex;
+              flex-flow: column wrap;
+              justify-content: space-between;
+
+              block-size: 15rem;
+
+              overflow-y: auto;
+
+              color: black;
+              background-color: white;
+
+              box-shadow: 2px 2px 5px black;
+
+              padding: 0.75rem;
+
+              border-radius: 0.25rem;
+
+              > p {
+                text-align: justify;
+              }
+
+              > div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                font-size: x-small;
+
+                .icons {
+                  display: flex;
+                  gap: 1ch;
+
+                  .fa-retweet {
+                    color: blue;
+                  }
+
+                  .fa-heart {
+                    color: red;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
