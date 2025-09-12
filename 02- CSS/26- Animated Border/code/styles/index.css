@@ -54,7 +54,7 @@ body {
         8;
       padding: 1rem;
 
-      animation: exchange 1s linear infinite;
+      animation: exchange 5s linear infinite;
     }
   }
 }

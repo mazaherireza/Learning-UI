@@ -35,7 +35,7 @@ section {
         position: relative;
 
         img {
-          width: 100%;
+          inline-size: 100%;
         }
 
         .watchlist-icon {
