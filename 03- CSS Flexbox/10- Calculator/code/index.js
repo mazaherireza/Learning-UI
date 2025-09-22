@@ -1,5 +1,5 @@
 const $ = document;
-const btnList = $.querySelectorAll(".btn");
+const buttons = $.querySelectorAll(".button");
 
 let buffer = "0";
 let total = 0;
@@ -42,15 +42,20 @@ const handleOperation = (operator) => {
       total = 0;
       break;
     case "=":
-      if (previousOperator === null) return;
+      if (previousOperator === null) {
+        return;
+      }
       applyOperation(+buffer);
       previousOperator = null;
       buffer = +total;
       total = 0;
       break;
     case "←":
-      if (buffer.length === 1) buffer = "0";
-      else buffer = buffer.substring(0, buffer.length - 1);
+      if (buffer.length === 1) {
+        buffer = "0";
+      } else {
+        buffer = buffer.substring(0, buffer.length - 1);
+      }
       break;
     case "+":
     case "−":
@@ -67,21 +72,27 @@ const handleNumeric = (digit) => {
 
 const clickHandler = (target) => {
   const { innerHTML: char } = target;
-  if (isNaN(+char)) handleOperation(char);
-  else handleNumeric(char);
+
+  if (isNaN(+char)) {
+    handleOperation(char);
+  } else {
+    handleNumeric(char);
+  }
+
   populateScreen();
 };
 
 const applyAnimation = (target) => {
   target.classList.add("animate");
+
   target.onanimationend = () => {
     target.classList.remove("animate");
   };
 };
 
 const bootstrap = () => {
-  btnList.forEach((btn) => {
-    btn.onclick = (event) => {
+  buttons.forEach((button) => {
+    button.onclick = (event) => {
       const { target } = event;
       clickHandler(target);
       applyAnimation(target);
