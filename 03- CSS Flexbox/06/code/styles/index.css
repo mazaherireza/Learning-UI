@@ -24,7 +24,7 @@ body {
       background-color: var(--primary);
 
       inline-size: 60%;
-      height: 30dvh;
+      block-size: 30dvh;
 
       padding: 0.5rem;
       margin: 0 auto;
