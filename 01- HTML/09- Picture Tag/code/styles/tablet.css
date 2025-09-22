@@ -12,7 +12,7 @@ body {
 
   picture {
     img {
-      width: 40%;
+      inline-size: 40%;
     }
   }
 }

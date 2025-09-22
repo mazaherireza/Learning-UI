@@ -14,12 +14,10 @@ body {
   }
 
   section {
-    &#playground {
-      padding: 1rem;
+    padding: 1rem;
 
-      #playground-title {
-        margin-block-end: 1rem;
-      }
+    #playground-title {
+      margin-block-end: 1rem;
     }
   }
 }

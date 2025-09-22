@@ -6,10 +6,8 @@ body {
   }
 
   section {
-    &#playground {
-      #playground-title {
-        font-size: medium;
-      }
+    #playground-title {
+      font-size: medium;
     }
   }
 }
