@@ -4,6 +4,7 @@ body {
 
   display: grid;
   grid-template-rows: auto 1fr auto;
+  gap: 1rem;
 
   header {
     padding: 1rem 2rem;
@@ -44,7 +45,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
 
     img {
