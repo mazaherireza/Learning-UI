@@ -1,4 +1,5 @@
 const $ = document;
+
 const buttons = $.querySelectorAll(".button");
 
 let buffer = "0";
@@ -6,10 +7,6 @@ let total = 0;
 let previousOperator = null;
 
 const screen = $.querySelector(".screen");
-
-const populateScreen = () => {
-  screen.innerHTML = buffer;
-};
 
 const applyOperation = (intBuffer) => {
   switch (previousOperator) {
@@ -28,40 +25,63 @@ const applyOperation = (intBuffer) => {
 };
 
 const calculate = (operator) => {
-  if (buffer === "0") return;
-  if (total === 0) total = +buffer;
-  else applyOperation(+buffer);
+  if (buffer === "0") {
+    return;
+  }
+
+  if (total === 0) {
+    total = +buffer;
+  } else {
+    applyOperation(+buffer);
+  }
+
   previousOperator = operator;
+
   buffer = "0";
 };
 
 const handleOperation = (operator) => {
   switch (operator) {
-    case "C":
+    case "C": {
       buffer = "0";
+
       total = 0;
+
       break;
-    case "=":
+    }
+
+    case "=": {
       if (previousOperator === null) {
         return;
       }
+
       applyOperation(+buffer);
+
       previousOperator = null;
+
       buffer = +total;
+
       total = 0;
+
       break;
-    case "←":
+    }
+
+    case "←": {
       if (buffer.length === 1) {
         buffer = "0";
       } else {
         buffer = buffer.substring(0, buffer.length - 1);
       }
+
       break;
+    }
+
     case "+":
     case "−":
     case "×":
-    case "÷":
+    case "÷": {
       calculate(operator);
+    }
   }
 };
 
@@ -79,7 +99,7 @@ const clickHandler = (target) => {
     handleNumeric(char);
   }
 
-  populateScreen();
+  screen.innerHTML = buffer;
 };
 
 const applyAnimation = (target) => {
