@@ -235,4 +235,61 @@ body {
       }
     }
   }
+
+  footer {
+    .newsletter {
+      background-color: blue;
+      color: var(--white, #ffffff);
+
+      padding-block: 1rem;
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        form {
+          flex-basis: 20rem;
+
+          position: relative;
+
+          input[type="email"] {
+            inline-size: 100%;
+
+            padding: 0.5rem 0.75rem;
+
+            border-radius: 0.5rem;
+
+            border: none;
+          }
+
+          button {
+            cursor: pointer;
+
+            position: absolute;
+
+            inset-inline-end: 0.75rem;
+            inset-block-start: 0.25rem;
+
+            background-color: blue;
+            padding: 0.25rem;
+
+            display: grid;
+            place-content: center;
+
+            border: none;
+            border-radius: 0.25rem;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
 }
