@@ -1,11 +1,19 @@
-h1#hero-title {
-  font-size: large;
-}
+body {
+  main {
+    #hero-title {
+      font-size: large;
+    }
+  }
 
-#playground-title {
-  font-size: medium;
-}
+  section {
+    #playground-title {
+      font-size: medium;
+    }
 
-.container .item {
-  font-size: small;
+    .container {
+      .item {
+        font-size: small;
+      }
+    }
+  }
 }
