@@ -1,5 +1,16 @@
-.wrapper {
-  min-width: 60%;
-  grid-template-columns: repeat(3, 5rem);
-  grid-template-rows: 6rem 8rem;
+body {
+  main {
+    min-inline-size: 60%;
+
+    grid-template-columns: repeat(3, 5rem);
+    grid-template-rows: 6rem 8rem;
+
+    .frame {
+      .title {
+        font-size: x-small;
+
+        padding: 0.25rem;
+      }
+    }
+  }
 }

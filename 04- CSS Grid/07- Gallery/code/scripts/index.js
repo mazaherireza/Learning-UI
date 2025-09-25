@@ -1,7 +1,7 @@
 const $ = document;
-const wrapper = $.querySelector(".wrapper");
+const main = $.querySelector("main");
 
-const PATH = "./assets/images/Portraits/";
+const PATH = "/assets/images/portraits/";
 const imgs = [];
 const MAX = 6;
 const EXTENSION = "jpg";
@@ -12,19 +12,19 @@ const populateImgs = () => {
   }
 };
 
-const populateWrapper = () => {
+const populateMain = () => {
   imgs.forEach((img) => {
     const html = `
-        <div>
-          <img src=${PATH}${img} alt="Portrait" />
+        <div class="frame">
+          <img src=${PATH}${img} alt="" />
           <span class="title">HOSCOS</span>
         </div>
     `;
-    wrapper.insertAdjacentHTML("beforeend", html);
+    main.insertAdjacentHTML("beforeend", html);
   });
 };
 
 window.onload = () => {
   populateImgs();
-  populateWrapper();
+  populateMain();
 };

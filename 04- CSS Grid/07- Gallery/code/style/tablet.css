@@ -1,5 +1,14 @@
-.wrapper {
-  min-width: 90%;
-  grid-template-columns: repeat(3, 8rem);
-  grid-template-rows: 8rem 10rem;
+body {
+  main {
+    min-inline-size: 90%;
+
+    grid-template-columns: repeat(3, 8rem);
+    grid-template-rows: 8rem 10rem;
+
+    .frame {
+      .title {
+        font-size: small;
+      }
+    }
+  }
 }
