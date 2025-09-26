@@ -1,60 +1,70 @@
 body {
-  min-height: 100dvh;
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
 
-main {
-  background: var(--primary) linear-gradient(to top left, #fff, var(--primary));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  main {
+    background: var(--primary)
+      linear-gradient(to top left, #fff, var(--primary));
 
-#playground {
-  padding: 1rem;
-}
+    display: grid;
+    place-content: center;
+  }
 
-#playground #playground-title {
-  margin-bottom: 1rem;
-}
+  section {
+    padding: 1rem;
 
-.container {
-  width: 80%;
-  height: 70dvh;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template: repeat(4, 4rem) / repeat(2, 6rem);
-  justify-content: center;
-  align-content: start;
-}
+    #playground-title {
+      margin-block-end: 1rem;
+    }
 
-.container .item {
-  font-size: large;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .container {
+      inline-size: 80%;
+      block-size: 70vh;
+      block-size: 70dvh;
 
-.un {
-  background-color: #ffc300;
-  grid-area: 1 / 1 / span 2 / span 2;
-}
-.deux {
-  background-color: #ff5733;
-}
-.trois {
-  background-color: #daf7a6;
-}
-.quatre {
-  background-color: #2874a6;
-  order: 1;
-}
-.cinq {
-  background-color: #aed6f1;
-}
-.six {
-  background-color: #1b4f72;
+      margin-inline: auto;
+
+      display: grid;
+      grid-template: repeat(4, 4rem) / repeat(2, 6rem);
+      justify-content: center;
+      align-content: end;
+
+      .item {
+        padding: 1rem;
+
+        display: grid;
+        place-content: center;
+
+        font-size: large;
+        font-weight: bold;
+      }
+
+      .un {
+        background-color: #ffc300;
+      }
+
+      .deux {
+        background-color: #ff5733;
+      }
+
+      .trois {
+        background-color: #daf7a6;
+      }
+
+      .quatre {
+        background-color: #2874a6;
+      }
+
+      .cinq {
+        background-color: #aed6f1;
+      }
+
+      .six {
+        background-color: #1b4f72;
+      }
+    }
+  }
 }
