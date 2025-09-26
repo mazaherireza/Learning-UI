@@ -22,7 +22,8 @@ body {
 
     .container {
       block-size: 40vh;
-      
+      block-size: 40dvh;
+
       display: grid;
       grid-template-columns: min-content max-content;
       grid-template-rows: 4rem 4rem 4rem;

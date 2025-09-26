@@ -21,6 +21,7 @@ body {
     }
 
     .container {
+      block-size: 40vh;
       block-size: 40dvh;
 
       display: grid;
