@@ -1,19 +1,26 @@
-h1#hero-title {
-  font-size: large;
-}
+body {
+  main {
+    #hero-title {
+      font-size: large;
+    }
+  }
 
-#playground-title {
-  font-size: medium;
-}
+  #playground {
+    #playground-title {
+      font-size: medium;
+    }
 
-.container {
-  width: 90%;
-  grid-template-rows: repeat(3, 2rem);
-}
+    .container {
+      inline-size: 90%;
 
-.header,
-.main,
-.aside,
-.footer {
-  font-size: small;
+      grid-template-rows: repeat(3, 2rem);
+
+      .header,
+      .main,
+      .aside,
+      .footer {
+        font-size: small;
+      }
+    }
+  }
 }

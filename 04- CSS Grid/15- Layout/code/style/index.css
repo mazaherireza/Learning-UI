@@ -1,61 +1,66 @@
 body {
-  min-height: 100dvh;
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
 
-main {
-  background: var(--primary) linear-gradient(to top left, #fff, var(--primary));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  main {
+    background: var(--primary)
+      linear-gradient(to top left, #fff, var(--primary));
 
-#playground {
-  padding: 1rem;
-}
+    display: gird;
+    place-content: center;
+  }
 
-#playground #playground-title {
-  margin-bottom: 1rem;
-}
+  #playground {
+    padding: 1rem;
 
-.container {
-  width: 60%;
-  height: 40dvh;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 3rem);
-  grid-template-areas: "header header header header" "main main _ aside" "footer footer footer footer";
-}
+    #playground-title {
+      margin-block-end: 1rem;
+    }
 
-.header,
-.main,
-.aside,
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
+    .container {
+      inline-size: 60%;
+      block-size: 40vh;
+      block-size: 40dvh;
 
-.header {
-  grid-area: header;
-  background-color: #ffc300;
-}
+      margin-inline: auto;
 
-.main {
-  grid-area: main;
-  background-color: #ff5733;
-}
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 3rem);
+      grid-template-areas: "header header header header" "main main _ aside" "footer footer footer footer";
 
-.aside {
-  grid-area: aside;
-  background-color: #daf7a6;
-}
+      .header,
+      .main,
+      .aside,
+      .footer {
+        display: grid;
+        place-content: center;
 
-.footer {
-  grid-area: footer;
-  background-color: #2874a6;
+        font-weight: bold;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: #ffc300;
+      }
+
+      .main {
+        grid-area: main;
+        background-color: #ff5733;
+      }
+
+      .aside {
+        grid-area: aside;
+        background-color: #daf7a6;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: #2874a6;
+      }
+    }
+  }
 }
