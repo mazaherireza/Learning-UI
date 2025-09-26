@@ -1,61 +1,73 @@
 body {
-  min-height: 100dvh;
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
 
-main {
-  background: var(--primary) linear-gradient(to top left, #fff, var(--primary));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  main {
+    background: var(--primary)
+      linear-gradient(to top left, #fff, var(--primary));
 
-#playground {
-  padding: 1rem;
-}
+    display: grid;
+    place-content: center;
+  }
 
-#playground #playground-title {
-  margin-bottom: 1rem;
-}
+  section {
+    padding: 1rem;
 
-.container {
-  height: 40dvh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "un deux" "trois trois" "quatre quatre" "cinq six";
-}
+    #playground-title {
+      margin-block-end: 1rem;
+    }
 
-.container .item {
-  font-size: large;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .container {
+      block-size: 40vh;
+      block-size: 40dvh;
 
-.un {
-  background-color: #ffc300;
-  grid-area: un;
-}
-.deux {
-  background-color: #ff5733;
-  grid-area: deux;
-}
-.trois {
-  background-color: #daf7a6;
-  grid-area: trois;
-}
-.quatre {
-  background-color: #2874a6;
-  grid-area: quatre;
-}
-.cinq {
-  background-color: #aed6f1;
-  grid-area: cinq;
-}
-.six {
-  background-color: #1b4f72;
-  grid-area: six;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "un deux" "trois trois" "quatre quatre" "cinq six";
+
+      .item {
+        padding: 1rem;
+
+        display: grid;
+        place-content: center;
+
+        font-size: large;
+        font-weight: bold;
+      }
+
+      .un {
+        background-color: #ffc300;
+        grid-area: un;
+      }
+
+      .deux {
+        background-color: #ff5733;
+        grid-area: deux;
+      }
+
+      .trois {
+        background-color: #daf7a6;
+        grid-area: trois;
+      }
+
+      .quatre {
+        background-color: #2874a6;
+        grid-area: quatre;
+      }
+
+      .cinq {
+        background-color: #aed6f1;
+        grid-area: cinq;
+      }
+
+      .six {
+        background-color: #1b4f72;
+        grid-area: six;
+      }
+    }
+  }
 }
