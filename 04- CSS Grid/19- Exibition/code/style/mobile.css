@@ -1,8 +1,13 @@
-.wrapper {
-  max-width: 50%;
-  grid-template: repeat(8, 1fr) / 1fr;
-}
+body {
+  main {
+    max-inline-size: 50%;
 
-.product-card button {
-  font-size: x-small;
+    grid-template: repeat(8, 1fr) / 1fr;
+
+    .product-card {
+      button {
+        font-size: x-small;
+      }
+    }
+  }
 }
