@@ -1,61 +1,73 @@
 body {
-  min-height: 100dvh;
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
 
-main {
-  background: var(--primary) linear-gradient(to top left, #fff, var(--primary));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  main {
+    background: var(--primary)
+      linear-gradient(to top left, #fff, var(--primary));
 
-#playground {
-  padding: 1rem;
-}
+    display: grid;
+    place-content: center;
+  }
 
-#playground #playground-title {
-  margin-bottom: 1rem;
-}
+  section {
+    padding: 1rem;
 
-/* 
-  When using minmax() function, the auto-fit keyword will EXPAND the grid items to fill the available space.
-  While auto-fill will KEEP the available space RESERVED without altering the grid items width.
-*/
+    #playground-title {
+      margin-block-end: 1rem;
+    }
 
-.container {
-  height: 50dvh;
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(4rem, auto));
-  grid-template-rows: repeat(4, 1fr);
-  border: 1px solid black;
-}
+    /* 
+      When using minmax() function, the auto-fit keyword will expand the grid items to fill the available space.
+      While auto-fill will keep the available space reserved without altering the grid items width.
+    */
 
-.container .item {
-  font-size: large;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .container {
+      block-size: 50vh;
+      block-size: 50dvh;
+      inline-size: 80%;
 
-.un {
-  background-color: #ffc300;
-}
-.deux {
-  background-color: #ff5733;
-}
-.trois {
-  background-color: #daf7a6;
-}
-.quatre {
-  background-color: #2874a6;
-}
-.cinq {
-  background-color: #aed6f1;
-}
-.six {
-  background-color: #1b4f72;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(4rem, auto));
+      grid-template-rows: repeat(4, 1fr);
+      border: 1px solid black;
+
+      .item {
+        padding: 1rem;
+
+        display: grid;
+        place-content: center;
+
+        font-size: large;
+        font-weight: bold;
+      }
+
+      .un {
+        background-color: #ffc300;
+      }
+
+      .deux {
+        background-color: #ff5733;
+      }
+
+      .trois {
+        background-color: #daf7a6;
+      }
+
+      .quatre {
+        background-color: #2874a6;
+      }
+
+      .cinq {
+        background-color: #aed6f1;
+      }
+
+      .six {
+        background-color: #1b4f72;
+      }
+    }
+  }
 }
