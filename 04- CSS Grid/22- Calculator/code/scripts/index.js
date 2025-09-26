@@ -1,5 +1,5 @@
 const $ = document;
-const btnList = $.querySelectorAll(".btn");
+const buttons = $.querySelectorAll(".button");
 
 let buffer = "0";
 let total = 0;
@@ -28,9 +28,16 @@ const applyOperation = (intBuffer) => {
 };
 
 const calculate = (operator) => {
-  if (buffer === "0") return;
-  if (total === 0) total = +buffer;
-  else applyOperation(+buffer);
+  if (buffer === "0") {
+    return;
+  }
+
+  if (total === 0) {
+    total = +buffer;
+  } else {
+    applyOperation(+buffer);
+  }
+
   previousOperator = operator;
   buffer = "0";
 };
@@ -80,8 +87,8 @@ const applyAnimation = (target) => {
 };
 
 const bootstrap = () => {
-  btnList.forEach((btn) => {
-    btn.onclick = (event) => {
+  buttons.forEach((button) => {
+    button.onclick = (event) => {
       const { target } = event;
       clickHandler(target);
       applyAnimation(target);
